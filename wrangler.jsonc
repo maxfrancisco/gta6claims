@@ -1,0 +1,11 @@
+// Cloudflare Workers config: serves the static export in ./out.
+// No Worker script runs, so requests are free and unlimited on the free plan.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gta6claims",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}

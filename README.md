@@ -4,11 +4,11 @@ Side-by-side comparisons of real South Florida places and their GTA 6 versions.
 
 **Stack (all free, commercial use allowed):**
 - Next.js 16, exported as static HTML
-- Cloudflare Pages for hosting (unlimited bandwidth for static files)
+- Cloudflare Workers static assets for hosting (static file requests are free and unlimited)
 - Supabase free tier for email signups and user submissions
 - MapLibre + OpenFreeMap for maps (no API key)
 
-The only optional cost is a custom domain (about $10/year). Until then the site lives at `your-project.pages.dev`.
+The only optional cost is a custom domain (about $10/year). Until then the site lives at `gta6claims.YOUR-SUBDOMAIN.workers.dev`.
 
 ---
 
@@ -28,19 +28,18 @@ The only optional cost is a custom domain (about $10/year). Until then the site 
 2. Open **SQL Editor > New query**, paste all of `supabase/schema.sql`, and click **Run**.
 3. Open **Project Settings > API** and copy the **Project URL** and the **anon public** key.
 
-### 3. Deploy on Cloudflare Pages
+### 3. Deploy on Cloudflare (Workers, static assets)
 1. Create a free account at cloudflare.com.
-2. Go to **Workers & Pages > Create > Pages > Connect to Git** and pick your repository.
+2. Go to **Workers & Pages > Create > Import a repository** and pick your repository. Name the Worker `gta6claims` (it must match `name` in `wrangler.jsonc`).
 3. Build settings:
-   - Framework preset: **Next.js (Static HTML Export)**
    - Build command: `npm run build`
-   - Build output directory: `out`
-4. Under **Environment variables**, add:
+   - Deploy command: `npx wrangler deploy`
+4. Under **Settings > Build > Variables and secrets** (build variables, not runtime ones, because Next.js bakes them in at build time), add:
    - `NEXT_PUBLIC_SUPABASE_URL`: your Supabase project URL
    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: your anon public key
-   - `NEXT_PUBLIC_SITE_URL`: `https://YOUR-PROJECT.pages.dev` (or your domain later)
+   - `NEXT_PUBLIC_SITE_URL`: your `https://gta6claims.YOUR-SUBDOMAIN.workers.dev` address (or your domain later)
    - `NODE_VERSION`: `22`
-5. Click **Save and Deploy**. Every push to GitHub redeploys the site automatically.
+5. Every push to `main` rebuilds and redeploys. `wrangler.jsonc` serves the `out` folder as static files only, so there is no per-request cost.
 
 ### 4. Keep Supabase from pausing
 Free Supabase projects pause after 7 days with no activity. The included GitHub Action pings it every 3 days.
@@ -51,7 +50,7 @@ In your GitHub repo, go to **Settings > Secrets and variables > Actions** and ad
 Then open the **Actions** tab, pick **Keep Supabase awake** and click **Run workflow** once to check that it works.
 
 ### 5. (Optional) Custom domain
-Buy a domain through Cloudflare Registrar (sold at cost) and add it under your Pages project's **Custom domains** tab.
+Buy a domain through Cloudflare Registrar (sold at cost) and add it under your Worker's **Settings > Domains & Routes**.
 Keep "GTA" and "Grand Theft Auto" out of the domain name. Take-Two enforces its trademarks.
 
 ---
@@ -83,7 +82,7 @@ Email signups are in **Table Editor > subscribers**. Export them as CSV into wha
 ## Free-tier limits to watch
 | Service | Free limit | What uses it |
 | --- | --- | --- |
-| Cloudflare Pages | Unlimited bandwidth, 500 builds a month | Every page view and every push |
+| Cloudflare Workers (static assets) | Unlimited static requests, 3,000 build minutes a month | Every page view and every push |
 | Supabase database | 500 MB | Signups and submissions (tiny) |
 | Supabase storage | 1 GB | Submitted photos (shrunk to ~0.5 MB each in the browser, so about 2,000 photos) |
 | Supabase egress | 5 GB a month | Only you downloading submissions |
