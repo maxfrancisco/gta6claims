@@ -42,6 +42,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </nav>
           </div>
         </header>
+        <div className="disclaimer-bar">
+          <p className="wrap">
+            GTA 6 Real vs Leonida is an unofficial fan site. It is not affiliated with, endorsed by or
+            connected to Rockstar Games or Take-Two Interactive. Game names and in-game images belong
+            to their owners and appear here for comparison and commentary.
+          </p>
+        </div>
         <main>{children}</main>
         <footer className="site-footer">
           <div className="wrap">

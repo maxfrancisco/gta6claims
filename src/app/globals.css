@@ -19,6 +19,7 @@
   --sky: #dceef6;
   --line: #d4dde1;
   --muted: #5b6468;
+  --red: #b42318;
   --radius-sign: 10px;
   --font: "Overpass Variable", "Overpass", system-ui, sans-serif;
   --measure: 66ch;
@@ -54,6 +55,10 @@ p { margin: 0 0 1em; max-width: var(--measure); }
   border: 2px solid var(--white); border-radius: 8px; padding: 0.2rem 0.7rem 0.05rem;
 }
 .brand:hover { color: var(--white); }
+
+/* Unofficial-site disclaimer under the header */
+.disclaimer-bar { border-bottom: 1px solid var(--line); }
+.disclaimer-bar p { color: var(--red); font-size: 0.78rem; line-height: 1.45; padding-block: 0.5rem; margin-block: 0; max-width: none; }
 .nav { display: flex; gap: 1.25rem; }
 .nav a { color: var(--white); text-decoration: none; font-weight: 600; }
 .nav a:hover { text-decoration: underline; color: var(--white); }
