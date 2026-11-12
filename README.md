@@ -26,7 +26,7 @@ The only optional cost is a custom domain (about $10/year). Until then the site 
 ### 2. Set up Supabase (signups and submissions)
 1. Create a free account at supabase.com and click **New project**. Pick the region closest to Florida (US East).
 2. Open **SQL Editor > New query**, paste all of `supabase/schema.sql`, and click **Run**.
-3. Open **Project Settings > API** and copy the **Project URL** and the **anon public** key.
+3. Open **Project Settings > API Keys** and copy the **Project URL** and the **Publishable key** (`sb_publishable_...`, called the "anon" key in older projects). Never put the **Secret key** in the site or in Cloudflare.
 
 ### 3. Deploy on Cloudflare (Workers, static assets)
 1. Create a free account at cloudflare.com.
@@ -36,7 +36,7 @@ The only optional cost is a custom domain (about $10/year). Until then the site 
    - Deploy command: `npx wrangler deploy`
 4. Under **Settings > Build > Variables and secrets** (build variables, not runtime ones, because Next.js bakes them in at build time), add:
    - `NEXT_PUBLIC_SUPABASE_URL`: your Supabase project URL
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: your anon public key
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: your Publishable key
    - `NEXT_PUBLIC_SITE_URL`: your `https://gta6claims.YOUR-SUBDOMAIN.workers.dev` address (or your domain later)
    - `NODE_VERSION`: `22`
 5. Every push to `main` rebuilds and redeploys. `wrangler.jsonc` serves the `out` folder as static files only, so there is no per-request cost.
@@ -45,7 +45,7 @@ The only optional cost is a custom domain (about $10/year). Until then the site 
 Free Supabase projects pause after 7 days with no activity. The included GitHub Action pings it every 3 days.
 In your GitHub repo, go to **Settings > Secrets and variables > Actions** and add:
 - `SUPABASE_URL`
-- `SUPABASE_ANON_KEY`
+- `SUPABASE_ANON_KEY` (your Publishable key)
 
 Then open the **Actions** tab, pick **Keep Supabase awake** and click **Run workflow** once to check that it works.
 
