@@ -6,7 +6,8 @@ import type { Place } from "@/lib/places";
 // Drag (or use arrow keys) to wipe between the real photo and the in-game shot.
 // Until photos exist, each side shows a labeled placeholder.
 export default function Compare({ place, priority = false }: { place: Place; priority?: boolean }) {
-  const [pos, setPos] = useState(50);
+  // With only a real photo so far, start near the right edge so the photo shows almost in full.
+  const [pos, setPos] = useState(place.realImage && !place.gameImage ? 90 : 50);
 
   return (
     <div className="compare" style={{ ["--pos" as string]: `${pos}%` }}>

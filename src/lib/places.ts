@@ -97,6 +97,7 @@ export const PLACES: Place[] = [
     lat: 25.8235,
     lng: -80.1214,
     blurb: "Two glassy towers on Collins Avenue that light up the beach skyline at night.",
+    realImage: "/photos/diamond-condos/real.jpg",
   },
   {
     slug: "flamingo-point",
