@@ -39,6 +39,7 @@ The only optional cost is a custom domain (about $10/year). Until then the site 
    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`: your Publishable key
    - `NEXT_PUBLIC_SITE_URL`: your `https://gta6claims.YOUR-SUBDOMAIN.workers.dev` address (or your domain later)
    - `NODE_VERSION`: `22`
+   - `NEXT_PUBLIC_GA_ID` (optional): your Google Analytics 4 Measurement ID, `G-XXXXXXXXXX`. Leave it out and no analytics loads.
 5. Every push to `main` rebuilds and redeploys. `wrangler.jsonc` serves the `out` folder as static files only, so there is no per-request cost.
 
 ### 4. Keep Supabase from pausing

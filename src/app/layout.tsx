@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { SITE_URL } from "@/lib/site";
+
+// Google Analytics 4 Measurement ID (G-XXXXXXXXXX), set in Cloudflare's build variables.
+// Left unset, no analytics script loads (local dev, preview builds).
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 
 export const metadata: Metadata = {
@@ -41,6 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </div>
         </footer>
       </body>
+      {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
     </html>
   );
 }
