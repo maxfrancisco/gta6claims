@@ -42,7 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               connected to Rockstar Games or Take-Two Interactive. Game names and in-game images
               belong to their owners and appear here for comparison and commentary.
             </p>
-            <p>Real-world photos are our own unless credited. Spotted a mistake? <Link href="/submit/">Tell us</Link>.</p>
+            <p>Real-world photos are our own unless credited. Spotted a mistake? <Link href="/submit/">Tell us</Link>. <Link href="/privacy/">Privacy</Link></p>
           </div>
         </footer>
       </body>

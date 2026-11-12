@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
 
@@ -44,7 +45,7 @@ export default function SignupForm() {
       {state.kind === "error" ? (
         <p className="status-err" role="alert">{state.msg}</p>
       ) : (
-        <p className="field-note">One email when new comparisons go up. No spam.</p>
+        <p className="field-note">One email when new comparisons go up. No spam. <Link href="/privacy/">Privacy</Link></p>
       )}
     </>
   );

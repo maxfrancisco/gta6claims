@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
 
@@ -140,6 +141,7 @@ export default function SubmitForm() {
 
       <div>
         <button className="btn" type="submit" disabled={saving}>{saving ? state.step : "Send match"}</button>
+        <p className="hint" style={{ marginTop: "0.75rem" }}>We use what you send only to check and credit the match. <Link href="/privacy/">Privacy</Link></p>
         {state.kind === "error" && <p className="status-err" role="alert" style={{ marginTop: "0.75rem" }}>{state.msg}</p>}
       </div>
     </form>
