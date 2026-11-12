@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
-import { SITE_URL } from "@/lib/site";
+import { ADSENSE_CLIENT, SITE_URL } from "@/lib/site";
 
 // Google Analytics 4 Measurement ID (G-XXXXXXXXXX), set in Cloudflare's build variables.
 // Left unset, no analytics script loads (local dev, preview builds).
@@ -23,6 +23,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
+      <head>
+        {/* AdSense: a plain tag in <head> so Google's site check finds it in the HTML. */}
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>
         <header className="site-header">
           <div className="wrap">

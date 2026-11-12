@@ -16,8 +16,9 @@ export default function PrivacyPage() {
         <h1>Privacy</h1>
         <p className="hint">Last updated November 12, 2026</p>
         <p>
-          Real vs Leonida collects as little as it can. We don&apos;t sell your information,
-          and we don&apos;t run ads that track you across other sites.
+          Real vs Leonida collects as little as it can, and we don&apos;t sell your
+          information. The site is paid for by ads from Google, which use cookies as described
+          below.
         </p>
 
         <h2>What we collect</h2>
@@ -39,6 +40,19 @@ export default function PrivacyPage() {
           </li>
         </ul>
 
+        <h2>Ads</h2>
+        <p>
+          We show ads through Google AdSense. Google and its partners use cookies to show ads
+          based on your visits to this site and other sites. You can turn off personalized ads in{" "}
+          <a href="https://adssettings.google.com" rel="noopener">Google&apos;s Ad Settings</a>, or
+          opt out of many other ad companies&apos; cookies at{" "}
+          <a href="https://www.aboutads.info/choices/" rel="noopener">aboutads.info</a>. Read{" "}
+          <a href="https://policies.google.com/technologies/ads" rel="noopener">
+            how Google uses cookies in advertising
+          </a>
+          . Visitors in Europe and the UK are asked for consent before personalized ads load.
+        </p>
+
         <h2>Who handles it</h2>
         <ul>
           <li>
@@ -58,6 +72,9 @@ export default function PrivacyPage() {
               Google Analytics opt-out add-on
             </a>{" "}
             to stop being counted.
+          </li>
+          <li>
+            <strong>Google AdSense</strong> serves the ads described above.
           </li>
           <li>
             <strong>OpenFreeMap</strong> supplies the map background on map pages, so your browser
