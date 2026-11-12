@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: PageProps<"/places/[slug]">):
   return {
     title: `${p.game} in GTA 6 is ${p.real} in real life`,
     description: `Side-by-side: ${p.game} in Leonida next to the real ${p.real} (${p.where}). ${p.blurb}`,
+    alternates: { canonical: `/places/${p.slug}/` },
     openGraph: p.realImage ? { images: [p.realImage] } : undefined,
   };
 }

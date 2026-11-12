@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Compare from "@/components/Compare";
 import SignupForm from "@/components/SignupForm";
 import { PLACES, REGIONS, placeBySlug } from "@/lib/places";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   const hero = placeBySlug("cortez-hotel")!;

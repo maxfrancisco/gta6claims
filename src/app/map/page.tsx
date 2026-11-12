@@ -5,6 +5,7 @@ import { PLACES } from "@/lib/places";
 export const metadata: Metadata = {
   title: "Map of real GTA 6 locations in Florida",
   description: "Every real-world place behind GTA 6's Leonida on one map, from Miami Beach to the Keys.",
+  alternates: { canonical: "/map/" },
 };
 
 export default function MapPage() {

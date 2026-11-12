@@ -4,6 +4,7 @@ import SubmitForm from "./SubmitForm";
 export const metadata: Metadata = {
   title: "Submit a real-world match",
   description: "Found a real Florida place in GTA 6? Send it in and get credited on the comparison page.",
+  alternates: { canonical: "/submit/" },
 };
 
 export default function SubmitPage() {

@@ -5,6 +5,7 @@ import { PLACES, REGIONS } from "@/lib/places";
 export const metadata: Metadata = {
   title: "Every GTA 6 location and its real-world counterpart",
   description: "The full list of Leonida places matched to real Florida locations, region by region.",
+  alternates: { canonical: "/places/" },
 };
 
 export default function PlacesIndex() {
