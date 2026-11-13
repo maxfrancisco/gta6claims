@@ -22,15 +22,15 @@ create policy "anyone can vote"
 
 -- Totals only; individual votes stay private.
 create or replace function public.claim_vote_totals()
-returns table (claim_slug text, real bigint, fake bigint)
+returns table (claim_slug text, real_votes bigint, fake_votes bigint)
 language sql
 stable
 security definer
 set search_path = public
 as $$
   select claim_slug,
-         count(*) filter (where vote = 'real') as real,
-         count(*) filter (where vote = 'fake') as fake
+         count(*) filter (where vote = 'real') as real_votes,
+         count(*) filter (where vote = 'fake') as fake_votes
   from public.claim_votes
   group by claim_slug
 $$;

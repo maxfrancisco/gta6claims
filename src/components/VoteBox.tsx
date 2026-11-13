@@ -44,8 +44,8 @@ export default function VoteBox({ slug }: { slug: string }) {
     if (!supabase) return;
     supabase.rpc("claim_vote_totals").then(({ data, error }) => {
       if (error || !Array.isArray(data)) return;
-      const row = (data as { claim_slug: string; real: number; fake: number }[]).find((r) => r.claim_slug === slug);
-      setTotals({ real: Number(row?.real ?? 0), fake: Number(row?.fake ?? 0) });
+      const row = (data as { claim_slug: string; real_votes: number; fake_votes: number }[]).find((r) => r.claim_slug === slug);
+      setTotals({ real: Number(row?.real_votes ?? 0), fake: Number(row?.fake_votes ?? 0) });
     });
   }, [slug]);
 
