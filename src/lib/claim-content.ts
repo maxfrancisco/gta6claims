@@ -51,7 +51,7 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     question: "What consoles is GTA 6 on?",
     body: [
       "At launch, GTA 6 is only on PlayStation 5 and Xbox Series X|S. That includes the PS5 Pro and the cheaper Xbox Series S.",
-      "It is not coming to PS4 or Xbox One, and there's no PC or Nintendo Switch 2 version on November 19. Rockstar hasn't announced a release date for any other platform.",
+      "There's no PS4, Xbox One, PC or Nintendo Switch 2 version on November 19. Xbox One owners can stream it through Xbox Cloud Gaming, but the game itself only runs on current consoles.",
       "Rockstar usually releases on consoles first. GTA 5 reached PC about a year and a half after its console launch, and Red Dead Redemption 2 about a year later.",
     ],
     faq: [
@@ -68,18 +68,18 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     ],
     faq: [
       { q: "When will GTA 6 come out on PC?", a: "Rockstar hasn't said. Based on its past games, expect a gap of a year or more after the console launch." },
-      { q: "Can I play GTA 6 on PC through the cloud?", a: "Not officially through Rockstar. Xbox Cloud Gaming availability depends on Microsoft's service and your region." },
+      { q: "Can I play GTA 6 on PC through the cloud?", a: "No. Xbox Cloud Gaming streams GTA 6 only to Xbox consoles at launch, not to PCs." },
     ],
   },
   "gta-6-on-ps4-and-xbox-one": {
     question: "Is GTA 6 coming to PS4 or Xbox One?",
     body: [
-      "No. GTA 6 is built for PS5 and Xbox Series X|S only, and Rockstar has never announced a version for the older consoles.",
-      "That's different from GTA 5, which came out on PS3 and Xbox 360 and was later re-released on newer hardware. GTA 6 leans on the faster storage and processors in current consoles, which the PS4 and Xbox One don't have.",
-      "If you're on PS4 or Xbox One, you'll need a PS5 or an Xbox Series console to play it.",
+      "Not as a game you install. GTA 6 is built for PS5 and Xbox Series X|S, and there's no version that runs on a PS4 or Xbox One.",
+      "Xbox One owners do have one option: Xbox Cloud Gaming. GTA 6 streams to Xbox One from launch day, running on Microsoft's servers. You have to buy the game first, and streaming time comes out of a monthly Game Pass allowance or paid Cloud Playtime packs.",
+      "PS4 owners have no equivalent. To play on PlayStation, you need a PS5.",
     ],
     faq: [
-      { q: "Will GTA 6 work on Xbox One with backward compatibility?", a: "No. Backward compatibility lets new consoles play old games, not the other way around." },
+      { q: "Can you play GTA 6 on Xbox One?", a: "Only by streaming it through Xbox Cloud Gaming, after buying the game. Streaming time is metered." },
       { q: "Is GTA 6 on PS4?", a: "No. It's only on PS5 and Xbox Series X|S." },
     ],
   },
@@ -165,6 +165,21 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     faq: [
       { q: "How much is the GTA 6 Collector's Edition?", a: "There's no official Collector's Edition, so there's no official price. Be careful with listings that claim otherwise." },
       { q: "What editions of GTA 6 are there?", a: "Standard ($79.99) and Ultimate ($99.99)." },
+    ],
+  },
+  "xbox-players-pay-per-hour": {
+    question: "Do you have to pay per hour to play GTA 6 on Xbox?",
+    body: [
+      "No, not if you download it. Buy GTA 6 on Xbox Series X or Series S, install it, and you can play as long as you like. There's no hourly charge, and you don't need Game Pass or any other subscription for the single-player game.",
+      "The per-hour charge only applies to Xbox Cloud Gaming, which streams the game from Microsoft's servers instead of running it on your console. GTA 6 is available on Xbox Cloud Gaming from launch day, but only on Xbox consoles: Xbox Series X|S and the older Xbox One. It doesn't stream to phones, PCs, smart TVs or web browsers.",
+      "Cloud streaming is how Xbox One owners can play, since there's no Xbox One version of the game. They still have to buy GTA 6 first. Streaming time then comes out of a monthly allowance: 5 hours with Game Pass Essential, 10 with Premium and 15 with Ultimate. Past that, Microsoft sells Cloud Playtime packs: 10 hours for $3.99, 25 hours for $7.99 and 50 hours for $11.99, roughly 24 to 40 cents an hour. Unused pack hours stay on your account until you use them.",
+      "So the claim mixes up two things. Downloading the game on a Series X|S costs the $79.99 or $99.99 purchase price and nothing more. Streaming it, mostly relevant to Xbox One owners, costs the same purchase plus playtime. A 100-hour playthrough streamed with the biggest pack would add about $24.",
+    ],
+    faq: [
+      { q: "Can you play GTA 6 on Xbox One?", a: "Only by streaming it through Xbox Cloud Gaming. You have to buy the game, and streaming time is metered after your monthly allowance runs out." },
+      { q: "Do you need Game Pass to play GTA 6 on Xbox?", a: "No. GTA 6 isn't in Game Pass, and you don't need a subscription to play the downloaded single-player game." },
+      { q: "Can I stream GTA 6 on my phone or PC?", a: "Not at launch. Xbox Cloud Gaming streaming for GTA 6 is limited to Xbox consoles." },
+      { q: "How much does it cost to stream GTA 6 on Xbox?", a: "You buy the game, then use your Game Pass cloud hours or Cloud Playtime packs, which cost about 24 to 40 cents per hour." },
     ],
   },
   "gta-6-unlocks-at-midnight-local-time": {

@@ -128,11 +128,13 @@ export const CLAIMS: Claim[] = [
     short: "GTA 6 is coming to PS4 and Xbox One",
     category: "Release",
     verdict: "BUSTED",
-    verdictText: "GTA 6 is made for PS5 and Xbox Series X|S. No last-generation version has been announced.",
+    verdictText:
+      "There's no PS4 or Xbox One version. Xbox One owners can stream GTA 6 through Xbox Cloud Gaming if they buy the game, with streaming time metered by the hour.",
     sources: [
       { label: "Gamepressure: Take-Two on Switch 2 and older consoles", url: "https://www.gamepressure.com/newsroom/gta-6-publisher-is-ready-to-fully-support-switch-2-take-two-ceo-d/z5790e" },
+      { label: "Hollywood Reporter: GTA VI is coming to Xbox Cloud Gaming at launch", url: "https://www.hollywoodreporter.com/business/business-news/grand-theft-auto-vi-gta-6-xbox-cloud-gaming-xbox-one-1236751742/" },
     ],
-    updated: D,
+    updated: N,
   },
   {
     slug: "gta-6-on-switch-2-at-launch",
@@ -472,6 +474,24 @@ export const CLAIMS: Claim[] = [
     placeSlug: "diamond-condos",
   },
   // ---------- Added November 13, 2026 from Google Trends rising searches ----------
+  {
+    slug: "xbox-players-pay-per-hour",
+    claim: "On Xbox, you have to pay by the hour to play GTA 6.",
+    short: "Xbox players pay by the hour for GTA 6",
+    category: "Release",
+    verdict: "BUSTED",
+    verdictText:
+      "Only cloud streaming is metered by the hour. Buy and download the game on Xbox Series X|S and you can play as long as you like, with no hourly fee or subscription.",
+    sources: [
+      { label: "Hollywood Reporter: GTA VI is coming to Xbox Cloud Gaming at launch", url: "https://www.hollywoodreporter.com/business/business-news/grand-theft-auto-vi-gta-6-xbox-cloud-gaming-xbox-one-1236751742/" },
+      { label: "Windows Central: GTA 6 on Xbox Cloud Gaming has a few catches", url: "https://www.windowscentral.com/gaming/xbox/grand-theft-auto-6-will-be-playable-on-xbox-cloud-gaming-but-there-are-a-few-catches" },
+      { label: "TweakTown: 100 hours of GTA 6 streaming would cost about $24", url: "https://www.tweaktown.com/news/114228/xbox-cloud-playtime-pricing-means-100-hours-of-gta-6-streaming-would-cost-just-dollars24/index.html" },
+      { label: "Tech Times: Game Pass includes only 5 to 15 cloud hours a month", url: "https://www.techtimes.com/articles/330438/20261110/gta-6-xbox-one-cloud-gaming-starts-november-19-game-pass-includes-only-5-15-hours-monthly.htm" },
+      { label: "VideoCardz: Cloud pay-as-you-go pricing revealed", url: "https://videocardz.com/newz/xbox-cloud-gaming-pay-as-you-go-pricing-revealed-3-99-for-10-hours-and-no-game-pass-required" },
+    ],
+    updated: N,
+    trending: true,
+  },
   {
     slug: "gta-6-unlocks-at-midnight-local-time",
     claim: "GTA 6 unlocks at midnight local time on November 19.",
