@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import SubmitForm from "./SubmitForm";
 
 export const metadata: Metadata = {
-  title: "Submit a real-world match",
-  description: "Found a real Florida place in GTA 6? Send it in and get credited on the comparison page.",
+  title: "Submit a GTA 6 claim",
+  description: "Heard a GTA 6 rumor or found proof in the game? Send it in and get credited when the verdict goes up.",
   alternates: { canonical: "/submit/" },
 };
 
@@ -11,10 +11,10 @@ export default function SubmitPage() {
   return (
     <section className="section">
       <div className="wrap">
-        <h1>Submit a match</h1>
+        <h1>Submit a claim</h1>
         <p>
-          Tell us what you found in Leonida and where you think it is in real life. An in-game
-          screenshot helps us check it fast. If you live nearby, add a photo of the real place.
+          Heard something about GTA 6, or tested it yourself? Send the claim and any proof you have. A clip
+          link or a screenshot gets it checked fastest. Real-world places count too.
         </p>
         <SubmitForm />
       </div>

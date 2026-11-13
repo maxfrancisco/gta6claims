@@ -5,7 +5,7 @@ const CONTACT = "privacy@gta6claims.com";
 
 export const metadata: Metadata = {
   title: "Privacy",
-  description: "What Real vs Leonida collects, why, who handles it, and how to have it removed.",
+  description: "What GTA 6 Claims collects, why, who handles it, and how to have it removed.",
   alternates: { canonical: "/privacy/" },
 };
 
@@ -14,9 +14,9 @@ export default function PrivacyPage() {
     <section className="section legal">
       <div className="wrap">
         <h1>Privacy</h1>
-        <p className="hint">Last updated November 12, 2026</p>
+        <p className="hint">Last updated November 13, 2026</p>
         <p>
-          Real vs Leonida collects as little as it can, and we don&apos;t sell your
+          GTA 6 Claims collects as little as it can, and we don&apos;t sell your
           information. The site is paid for by ads from Google, which use cookies as described
           below.
         </p>
@@ -28,10 +28,15 @@ export default function PrivacyPage() {
             comparisons go up.
           </li>
           <li>
-            <strong>What you send through <Link href="/submit/">Submit a match</Link>.</strong> That
-            includes the places you name, any notes and photos, the name or handle you want credit
-            under, and your email if you give one. We use it to check the match and credit you if
-            we publish it. Your email is never shown on the site.
+            <strong>What you send through <Link href="/submit/">Submit a claim</Link>.</strong> That
+            includes the claim, any proof link, screenshot and notes, the name or handle you want
+            credit under, and your email if you give one. We use it to check the claim and credit
+            you if we publish it. Your email is never shown on the site.
+          </li>
+          <li>
+            <strong>Your votes.</strong> When you vote on a claim, we store the vote with a random
+            ID that your browser keeps, so each browser votes once. It isn&apos;t linked to your
+            name or email, and only vote totals are shown.
           </li>
           <li>
             <strong>Visit statistics.</strong> We use Google Analytics to count visits and see
@@ -84,7 +89,7 @@ export default function PrivacyPage() {
 
         <h2>How long we keep it</h2>
         <p>
-          We keep your signup until you unsubscribe or ask us to delete it. We keep submissions
+          We keep votes as part of the totals. We keep your signup until you unsubscribe or ask us to delete it. We keep submissions
           until we&apos;ve reviewed them. If we publish one, we keep the photos and credit as part
           of the page; if we don&apos;t, we delete it.
         </p>

@@ -1,6 +1,6 @@
-# Real vs Leonida
+# GTA 6 Claims
 
-Side-by-side comparisons of real South Florida places and their GTA 6 versions.
+Every GTA 6 rumor, leak and feature claim, stamped Confirmed, Busted or Unverified, with sources, a player vote and share cards for TikTok, Reels, Shorts and Instagram. Also hosts the Real vs Leonida photo comparisons under /places/.
 
 **Stack (all free, commercial use allowed):**
 - Next.js 16, exported as static HTML
@@ -55,6 +55,21 @@ Buy a domain through Cloudflare Registrar (sold at cost) and add it under your W
 Keep "GTA" and "Grand Theft Auto" out of the domain name. Take-Two enforces its trademarks.
 
 ---
+
+
+## Claims
+
+All claims live in `src/lib/claims.ts`. Each one gets:
+- a page at `/claims/<slug>/`
+- share cards built at deploy time: `/cards/<slug>/story.png` (1080x1920, TikTok, Reels, Stories, Shorts), `/cards/<slug>/post.png` (1080x1350, Instagram feed) and `/cards/<slug>/og.png` (1200x630, link previews)
+- an entry in the sitemap
+
+**Change a verdict:** edit `verdict` and `verdictText`, add a source, set `updated` to today, push. The page and all three cards rebuild.
+**Add a claim:** copy an entry, give it a new unique `slug`, push.
+
+**Voting and claim submissions** need `supabase/claims.sql` run once in Supabase > SQL Editor (after `schema.sql`).
+Claim submissions land in **Table Editor > claim_submissions**; proof screenshots are in **Storage > submissions > claims/**.
+Vote totals: run `select * from claim_vote_totals();` in the SQL Editor.
 
 ## Adding photos and places
 

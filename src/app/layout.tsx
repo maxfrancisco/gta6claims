@@ -12,12 +12,12 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Real vs Leonida: the real Florida places behind GTA 6",
-    template: "%s | Real vs Leonida",
+    default: "GTA 6 Claims: every rumor and feature, checked",
+    template: "%s | GTA 6 Claims",
   },
   description:
-    "Side-by-side photos of real South Florida places and their GTA 6 versions in Leonida, shot on location by a Fort Lauderdale local.",
-  openGraph: { type: "website", siteName: "Real vs Leonida" },
+    "Every GTA 6 rumor, leak and feature claim, stamped Confirmed, Busted or Unverified, with sources and shareable verdict cards.",
+  openGraph: { type: "website", siteName: "GTA 6 Claims" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -34,17 +34,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body>
         <header className="site-header">
           <div className="wrap">
-            <Link href="/" className="brand">Real vs Leonida</Link>
+            <Link href="/" className="brand">GTA 6 Claims</Link>
             <nav className="nav" aria-label="Main">
-              <Link href="/places/">Places</Link>
-              <Link href="/map/">Map</Link>
-              <Link href="/submit/">Submit a match</Link>
+              <Link href="/claims/">Claims</Link>
+              <Link href="/places/">Real places</Link>
+              <Link href="/submit/">Submit a claim</Link>
             </nav>
           </div>
         </header>
         <div className="disclaimer-bar">
           <p className="wrap">
-            GTA 6 Real vs Leonida is an unofficial fan site. It is not affiliated with, endorsed by or
+            GTA 6 Claims is an unofficial fan site. It is not affiliated with, endorsed by or
             connected to Rockstar Games or Take-Two Interactive. Game names and in-game images belong
             to their owners and appear here for comparison and commentary.
           </p>
@@ -53,7 +53,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <footer className="site-footer">
           <div className="wrap">
             <p>
-              Real vs Leonida is an unofficial fan site. It is not affiliated with, endorsed by or
+              GTA 6 Claims is an unofficial fan site. It is not affiliated with, endorsed by or
               connected to Rockstar Games or Take-Two Interactive. Game names and in-game images
               belong to their owners and appear here for comparison and commentary.
             </p>

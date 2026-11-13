@@ -1,69 +1,66 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Compare from "@/components/Compare";
+import ClaimBoard from "@/components/ClaimBoard";
 import SignupForm from "@/components/SignupForm";
-import { PLACES, REGIONS, placeBySlug } from "@/lib/places";
+import VerdictStamp from "@/components/VerdictStamp";
+import { CLAIMS, countByVerdict } from "@/lib/claims";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
 export default function Home() {
-  const hero = placeBySlug("cortez-hotel")!;
+  const counts = countByVerdict();
+  const spotlight = CLAIMS.find((c) => c.slug === "gta-6-launches-on-pc")!;
 
   return (
     <>
       <section className="hero">
         <div className="wrap hero-grid">
           <div>
-            <h1>The real Florida behind Leonida.</h1>
+            <h1>Every GTA 6 claim, checked.</h1>
             <p className="lede">
-              GTA 6 rebuilds Miami, the Keys and the Everglades under new names. We go stand in the
-              real places and photograph them, so you can drag between the game and the street.
+              Rumors, leaks and &ldquo;you can do this&rdquo; claims, stamped Confirmed, Busted or Unverified, with
+              the sources to back it. On November 19 we start testing the rest in the game.
+            </p>
+            <p className="tally">
+              <span><strong>{counts.CONFIRMED}</strong> confirmed</span>
+              <span><strong>{counts.BUSTED}</strong> busted</span>
+              <span><strong>{counts.UNVERIFIED}</strong> still open</span>
             </p>
             <SignupForm />
           </div>
-          <Compare place={hero} priority />
+          <Link href={`/claims/${spotlight.slug}/`} className="spotlight">
+            <span className="claim-label">The claim</span>
+            <span className="spotlight-text">&ldquo;{spotlight.claim.replace(/\.$/, "")}&rdquo;</span>
+            <VerdictStamp verdict={spotlight.verdict} size="lg" />
+            <span className="spotlight-more">See why →</span>
+          </Link>
         </div>
       </section>
 
-      <section className="section section-sky">
+      <section className="section section-sky" id="claims">
         <div className="wrap">
           <div className="section-head">
-            <h2>Pick a region</h2>
-            <p>{PLACES.length} places matched so far, with more after launch on November 19.</p>
+            <h2>The claims board</h2>
+            <p>Tap a claim for the evidence, the vote, and a card to share.</p>
           </div>
-          <div className="regions">
-            {REGIONS.map((r) => {
-              const n = PLACES.filter((p) => p.region === r.name).length;
-              return (
-                <Link key={r.name} href={`/places/#${slug(r.name)}`} className="exit-sign">
-                  <span className="name">{r.name}</span>
-                  <span className="to">{r.real}</span>
-                  <span className="count">{n} {n === 1 ? "place" : "places"}</span>
-                </Link>
-              );
-            })}
-          </div>
+          <ClaimBoard claims={CLAIMS} />
         </div>
       </section>
 
       <section className="section">
         <div className="wrap">
           <div className="section-head">
-            <h2>Found a real place in the game?</h2>
+            <h2>Heard something about GTA 6?</h2>
           </div>
           <p>
-            Send us the in-game spot and where you think it is in real life. If you live near it,
-            add your own photo. We check every match and credit you on the page.
+            Send us the claim and any proof: a clip, a screenshot, a source. We check it and credit you when
+            the verdict goes up.
           </p>
-          <Link href="/submit/" className="btn">Submit a match</Link>
+          <Link href="/submit/" className="btn">Submit a claim</Link>
         </div>
       </section>
     </>
   );
-}
-
-function slug(s: string) {
-  return s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 }
