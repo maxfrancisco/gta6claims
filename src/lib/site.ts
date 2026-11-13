@@ -16,4 +16,11 @@ export const NEW_RELIC: {
   licenseKey: string;
   /** "bam.nr-data.net" for US accounts, "bam.eu01.nr-data.net" for EU accounts. */
   beacon: string;
-} | null = null;
+} | null = {
+  accountID: "3128228",
+  trustKey: "3128228",
+  agentID: "1103562116",
+  applicationID: "1103562116",
+  licenseKey: "NRBR-cddd069dc4810fc8a8b",
+  beacon: "bam.nr-data.net",
+};

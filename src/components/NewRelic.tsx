@@ -16,8 +16,12 @@ export default function NewRelic() {
     import("@newrelic/browser-agent/loaders/browser-agent").then(({ BrowserAgent }) => {
       new BrowserAgent({
         init: {
+          // Matches the settings in New Relic's own snippet for this app.
+          browser_consent_mode: { enabled: false },
           privacy: { cookies_enabled: true },
-          ajax: { deny_list: [nr.beacon] },
+          distributed_tracing: { enabled: true },
+          performance: { capture_measures: true },
+          ajax: { deny_list: [nr.beacon], capture_payloads: "none" },
           // Off: replays record what visitors do on screen, which our privacy page doesn't cover.
           session_replay: { enabled: false },
         },
