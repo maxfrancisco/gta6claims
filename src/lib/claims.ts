@@ -50,6 +50,7 @@ export const VERDICT_BLURB: Record<Verdict, string> = {
 export const CATEGORIES: Category[] = ["Release", "Gameplay", "World", "Easter eggs", "Real world"];
 
 const D = "2026-11-12";
+const N = "2026-11-13";
 
 export const CLAIMS: Claim[] = [
   // ---------- Release ----------
@@ -195,12 +196,12 @@ export const CLAIMS: Claim[] = [
     category: "Release",
     verdict: "BUSTED",
     verdictText:
-      "PlayStation Store data puts the PS5 download at about 210 GB. Rockstar hasn't published an official size, but nothing supports 676 GB.",
+      "Rockstar says GTA 6 needs up to 212 GB of free space. The 676 GB figure was a fake that spread before the real size was known.",
     sources: [
-      { label: "GamesRadar: GTA 6 is a 210 GB download", url: "https://gamesradar.com/games/grand-theft-auto/gta-6-is-a-210gb-download-says-playstation-store-sleuth" },
+      { label: "GamesRadar: Rockstar confirms GTA 6 is 212 GB", url: "https://gamesradar.com/games/grand-theft-auto/rockstar-confirms-gta-6-is-212gb-pre-loading-opens-earlier-than-previously-announced-for-digital-orders" },
       { label: "HotHardware: Preload guide", url: "https://hothardware.com/news/gta-6-preload-guide-212gb-size-start-times-what-to-know" },
     ],
-    updated: D,
+    updated: N,
   },
   {
     slug: "gta-online-launches-same-day",
@@ -470,6 +471,211 @@ export const CLAIMS: Claim[] = [
     updated: D,
     placeSlug: "diamond-condos",
   },
+  // ---------- Added November 13, 2026 from Google Trends rising searches ----------
+  {
+    slug: "gta-6-unlocks-at-midnight-local-time",
+    claim: "GTA 6 unlocks at midnight local time on November 19.",
+    short: "GTA 6 unlocks at midnight local time",
+    category: "Release",
+    verdict: "CONFIRMED",
+    verdictText:
+      "Rockstar's support page says midnight local time on November 19 in every region. In the US, store listings follow Eastern time, so the West Coast can start at 9 p.m. on November 18.",
+    sources: [
+      { label: "Forbes: GTA 6 unlocks at midnight on November 19", url: "https://www.forbes.com/sites/brianmazique/2026/11/12/gta-6-unlocks-at-midnight-on-november-19-but-millions-of-americans-can-start-playing-the-night-before/" },
+      { label: "Push Square: GTA 6 release times", url: "https://www.pushsquare.com/guides/gta-6-release-times-when-can-you-start-playing" },
+    ],
+    updated: N,
+    trending: true,
+  },
+  {
+    slug: "gta-6-got-delayed-again",
+    claim: "GTA 6 got delayed again.",
+    short: "GTA 6 got delayed a third time",
+    category: "Release",
+    verdict: "BUSTED",
+    verdictText:
+      "No third delay. GTA 6 is still set for November 19, 2026, the date Rockstar announced in November 2025, and Take-Two said it was highly confident in it.",
+    sources: [
+      { label: "GamesRadar: Rockstar commits to November 2026", url: "https://www.gamesradar.com/games/grand-theft-auto/gta-6-delayed-6-more-months-as-rockstar-commits-to-november-2026-and-says-sorry" },
+      { label: "TweakTown: Rockstar delays GTA 6 to November 19, 2026", url: "https://www.tweaktown.com/news/108727/rockstar-officially-delays-gta-6-again-will-now-release-on-november-19-2026/index.html" },
+    ],
+    updated: N,
+    trending: true,
+  },
+  {
+    slug: "gta-6-is-already-out",
+    claim: "GTA 6 is already out.",
+    short: "GTA 6 is already out",
+    category: "Release",
+    verdict: "BUSTED",
+    verdictText:
+      "Not yet. You can pre-order and pre-load it, but it doesn't unlock until midnight local time on November 19, 2026.",
+    sources: [
+      { label: "Forbes: GTA 6 unlocks at midnight on November 19", url: "https://www.forbes.com/sites/brianmazique/2026/11/12/gta-6-unlocks-at-midnight-on-november-19-but-millions-of-americans-can-start-playing-the-night-before/" },
+    ],
+    updated: N,
+  },
+  {
+    slug: "gta-6-needs-212-gb",
+    claim: "GTA 6 needs 212 GB of free storage.",
+    short: "GTA 6 needs 212 GB of storage",
+    category: "Release",
+    verdict: "CONFIRMED",
+    verdictText:
+      "Rockstar says the game needs up to 212 GB of free space, depending on the console. Clear room before pre-loading.",
+    sources: [
+      { label: "GamesRadar: Rockstar confirms GTA 6 is 212 GB", url: "https://gamesradar.com/games/grand-theft-auto/rockstar-confirms-gta-6-is-212gb-pre-loading-opens-earlier-than-previously-announced-for-digital-orders" },
+      { label: "TechRadar: Pre-loads need 212 GB free", url: "https://techradar.com/gaming/gta-6-digital-pre-loads-for-ps5-and-xbox-will-begin-9-days-early-and-require-a-whopping-212gb-of-free-space" },
+    ],
+    updated: N,
+  },
+  {
+    slug: "gta-6-runs-at-60-fps",
+    claim: "GTA 6 runs at 60 fps on PS5 Pro.",
+    short: "GTA 6 runs at 60 fps on PS5 Pro",
+    category: "Release",
+    verdict: "BUSTED",
+    verdictText:
+      "Rockstar's target is 30 fps on every console, PS5 Pro included. The Pro gets visual upgrades instead, and no 60 fps mode has been announced.",
+    sources: [
+      { label: "Push Square: 30 fps target, PS5 Pro features", url: "https://www.pushsquare.com/news/2026/11/gta-6-ps5-pro-features-revealed-30fps-target-on-both-consoles" },
+      { label: "Notebookcheck: Console performance targets", url: "https://www.notebookcheck.net/Rockstar-reveals-GTA-6-console-performance-targets-and-PS5-Pro-upgrades.1447121.0.html" },
+    ],
+    updated: N,
+    trending: true,
+  },
+  {
+    slug: "gta-6-looks-best-on-ps5-pro",
+    claim: "GTA 6 looks best on PS5 Pro.",
+    short: "GTA 6 looks best on PS5 Pro",
+    category: "Release",
+    verdict: "CONFIRMED",
+    verdictText:
+      "Rockstar announced PS5 Pro-only extras: ray-traced shadows and sharper image quality from Sony's PSSR upscaling. Frame rate is the same 30 fps target as other consoles.",
+    sources: [
+      { label: "Push Square: PS5 Pro features revealed", url: "https://www.pushsquare.com/news/2026/11/gta-6-ps5-pro-features-revealed-30fps-target-on-both-consoles" },
+      { label: "Notebookcheck: PS5 Pro upgrades", url: "https://www.notebookcheck.net/Rockstar-reveals-GTA-6-console-performance-targets-and-PS5-Pro-upgrades.1447121.0.html" },
+    ],
+    updated: N,
+  },
+  {
+    slug: "ultimate-edition-has-extra-story",
+    claim: "The GTA 6 Ultimate Edition has extra story missions.",
+    short: "Ultimate Edition has extra story",
+    category: "Release",
+    verdict: "BUSTED",
+    verdictText:
+      "The $99.99 Ultimate Edition adds 16 extras like vehicles, weapons, outfits, shops and activities, but the story is the same as the $79.99 Standard Edition.",
+    sources: [
+      { label: "dlcompare: Standard vs Ultimate compared", url: "https://www.dlcompare.com/gaming-news/gta-6-editions-compared-standard-vs-ultimate-85365" },
+      { label: "GTA Boom: What each edition includes", url: "https://www.gtaboom.com/gta-6-locked-in-game-content-what-you-are-missing-and-what-you-are-not-82a4" },
+    ],
+    updated: N,
+    trending: true,
+  },
+  {
+    slug: "there-is-a-deluxe-edition",
+    claim: "There's a GTA 6 Deluxe Edition.",
+    short: "There's a GTA 6 Deluxe Edition",
+    category: "Release",
+    verdict: "BUSTED",
+    verdictText: "Rockstar sells two editions: Standard at $79.99 and Ultimate at $99.99. There is no Deluxe Edition.",
+    sources: [
+      { label: "dlcompare: Why there's no Deluxe Edition", url: "https://www.dlcompare.com/gaming-news/gta-6-editions-compared-standard-vs-ultimate-85365" },
+    ],
+    updated: N,
+  },
+  {
+    slug: "official-gta-6-ps5-controller",
+    claim: "There's an official GTA 6 PS5 controller.",
+    short: "There's an official GTA 6 PS5 controller",
+    category: "Release",
+    verdict: "CONFIRMED",
+    verdictText:
+      "Sony made two limited-edition GTA VI DualSense controllers, one black and one white. They're cosmetic and ship November 19. There's no GTA-branded Xbox controller.",
+    sources: [
+      { label: "PlayStation Blog: GTA VI limited-edition DualSense", url: "https://blog.playstation.com/2026/09/03/first-look-at-the-grand-theft-auto-vi-limited-edition-dualsense-wireless-controllers/" },
+      { label: "Forbes: One controller is much harder to find", url: "https://www.forbes.com/sites/brianmazique/2026/09/12/gta-6s-limited-edition-ps5-controllers-are-available---but-one-is-much-harder-to-find/" },
+    ],
+    updated: N,
+    trending: true,
+  },
+  {
+    slug: "gta-6-has-crossplay",
+    claim: "GTA 6 has crossplay between PS5 and Xbox.",
+    short: "GTA 6 has PS5–Xbox crossplay",
+    category: "Release",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "Rockstar hasn't announced crossplay, and hasn't announced an online mode for it to apply to. GTA Online never allowed PlayStation and Xbox players together.",
+    howToTest: "If an online mode appears, check whether you can invite friends on the other console.",
+    sources: [
+      { label: "dlcompare: Crossplay and cross-progression explained", url: "https://www.dlcompare.com/gaming-news/is-gta-6-cross-platform-crossplay-and-cross-progression-explained" },
+      { label: "GTA Intel: Will GTA 6 have crossplay?", url: "https://gtaintel.com/news/gta-6-is-it-cross-platform-crossplay" },
+    ],
+    updated: N,
+  },
+  {
+    slug: "rockstar-released-the-full-map",
+    claim: "Rockstar has released the full GTA 6 map.",
+    short: "Rockstar released the full map",
+    category: "World",
+    verdict: "BUSTED",
+    verdictText:
+      "Rockstar hasn't published a full map. The detailed maps online come from fan mapping projects built frame by frame from trailers.",
+    sources: [
+      { label: "T3: The fan-made 'Google Maps' of GTA 6", url: "https://www.t3.com/tech/gaming/the-google-maps-of-gta-6-fan-project-lets-you-see-around-the-huge-open-world-location-in-grand-theft-auto-vi" },
+      { label: "Gfinity: The GTA 6 mapping project", url: "https://www.gfinityesports.com/article/this-gta-6-mapping-project-might-be-the-internets-best-detective-work-yet" },
+    ],
+    updated: N,
+    trending: true,
+  },
+  {
+    slug: "reviews-come-out-november-18",
+    claim: "GTA 6 reviews come out on November 18.",
+    short: "GTA 6 reviews drop November 18",
+    category: "Release",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "Insider Gaming reports the review embargo lifts November 18, a day before launch, like GTA 5 and Red Dead Redemption 2. Rockstar hasn't announced it.",
+    howToTest: "Check Metacritic and OpenCritic on the morning of November 18.",
+    sources: [
+      { label: "Insider Gaming: GTA 6 review embargo", url: "https://insider-gaming.com/grand-theft-auto-6-review-embargo/" },
+      { label: "Beebom: Review embargo date", url: "https://beebom.com/gta-6-review-embargo-date-revealed/" },
+    ],
+    updated: N,
+  },
+  {
+    slug: "pre-orders-made-1-billion",
+    claim: "GTA 6 made $1 billion from pre-orders.",
+    short: "GTA 6 made $1 billion from pre-orders",
+    category: "Release",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "Analyst estimates put pre-order revenue between about $750 million and $1.09 billion. Take-Two hasn't published a number, only that pre-orders are at unprecedented levels.",
+    howToTest: "Take-Two is expected to share first sales figures after launch.",
+    sources: [
+      { label: "Benzinga: Pre-orders hit $751 million (estimate)", url: "https://www.benzinga.com/trading-ideas/long-ideas/26/11/62942816/gta-6-preorder-sales-hit-751-million-2-weeks-ahead-of-release-are-investors-ignoring-take-two-stock-opportunity" },
+      { label: "Motley Fool: GTA VI is days away", url: "https://www.fool.com/investing/2026/11/11/gta-vi-days-away-don-t-expect-gta-v-style-returns-from-take-two-stock-at-5-7-times-sales/" },
+    ],
+    updated: N,
+  },
+  {
+    slug: "manni-perez-plays-lucia",
+    claim: "Manni L. Perez plays Lucia in GTA 6.",
+    short: "Manni L. Perez plays Lucia",
+    category: "Gameplay",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "She's the name fans most often link to Lucia, based on her look and voice in the trailers. Neither Rockstar nor the actress has confirmed it.",
+    howToTest: "Check the credits after launch.",
+    sources: [
+      { label: "PCGamesN: GTA 6 voice actors and cast rumors", url: "https://www.pcgamesn.com/grand-theft-auto-6/voice-actors" },
+      { label: "Red Bull: Lucia explained", url: "https://www.redbull.com/int-en/gta-6-lucia-caminos" },
+    ],
+    updated: N,
+  },
+
 ];
 
 export function claimBySlug(slug: string): Claim | undefined {

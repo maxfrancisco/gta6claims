@@ -64,8 +64,8 @@ All claims live in `src/lib/claims.ts`. Each one gets:
 - share cards built at deploy time: `/cards/<slug>/story.png` (1080x1920, TikTok, Reels, Stories, Shorts), `/cards/<slug>/post.png` (1080x1350, Instagram feed) and `/cards/<slug>/og.png` (1200x630, link previews)
 - an entry in the sitemap
 
-**Change a verdict:** edit `verdict` and `verdictText`, add a source, set `updated` to today, push. The page and all three cards rebuild.
-**Add a claim:** copy an entry, give it a new unique `slug`, push.
+**Change a verdict:** edit `verdict` and `verdictText` in `src/lib/claims.ts`, add a source, set `updated` to today, and rewrite the matching write-up in `src/lib/claim-content.ts`. Push; the page and all three cards rebuild.
+**Add a claim:** copy an entry in `claims.ts` with a new unique `slug`, and add its `question`, `body` and `faq` in `claim-content.ts` (the build fails if one is missing).
 
 **Voting and claim submissions** need `supabase/claims.sql` run once in Supabase > SQL Editor (after `schema.sql`).
 Claim submissions land in **Table Editor > claim_submissions**; proof screenshots are in **Storage > submissions > claims/**.

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import ShareCards from "@/components/ShareCards";
 import VerdictStamp from "@/components/VerdictStamp";
 import VoteBox from "@/components/VoteBox";
+import { CLAIM_CONTENT } from "@/lib/claim-content";
 import { CLAIMS, VERDICT_BLURB, VERDICT_LABEL, claimBySlug } from "@/lib/claims";
 import { placeBySlug } from "@/lib/places";
 import { SITE_URL } from "@/lib/site";
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }: PageProps<"/claims/[slug]">):
   const { slug } = await params;
   const c = claimBySlug(slug);
   if (!c) return {};
-  const title = `${c.short}? ${VERDICT_LABEL[c.verdict]}`;
+  const title = `${CLAIM_CONTENT[c.slug].question} ${VERDICT_LABEL[c.verdict]}`;
   return {
     title,
     description: `${VERDICT_LABEL[c.verdict]}: ${c.verdictText}`,
@@ -35,12 +36,28 @@ export default async function ClaimPage({ params }: PageProps<"/claims/[slug]">)
   const c = claimBySlug(slug);
   if (!c) notFound();
 
+  const content = CLAIM_CONTENT[c.slug];
+  if (!content) throw new Error(`Missing CLAIM_CONTENT for ${c.slug}`);
   const place = c.placeSlug ? placeBySlug(c.placeSlug) : undefined;
   const related = CLAIMS.filter((o) => o.category === c.category && o.slug !== c.slug).slice(0, 4);
   const url = `${SITE_URL}/claims/${c.slug}/`;
 
+  // FAQ structured data: the main question plus the related ones.
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      { q: content.question, a: `${VERDICT_LABEL[c.verdict]}. ${c.verdictText}` },
+      ...content.faq,
+    ].map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd).replace(/</g, "\\u003c") }}
+      />
       <section className={`claim-hero claim-hero-${c.verdict.toLowerCase()}`}>
         <div className="wrap">
           <p className="crumbs">
@@ -59,6 +76,13 @@ export default async function ClaimPage({ params }: PageProps<"/claims/[slug]">)
       <section className="section">
         <div className="wrap claim-layout">
           <div>
+            <article className="claim-body">
+              <h2>{content.question}</h2>
+              {content.body.map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+            </article>
+
             {c.howToTest && (
               <div className="test-box">
                 <h2>How to test it on launch day</h2>
@@ -79,6 +103,16 @@ export default async function ClaimPage({ params }: PageProps<"/claims/[slug]">)
                 <Link href={`/places/${place.slug}/`} className="btn btn-small">Open the comparison</Link>
               </div>
             )}
+
+            <section className="faq" aria-labelledby="faq-title">
+              <h2 id="faq-title">People also ask</h2>
+              {content.faq.map((f) => (
+                <div key={f.q} className="faq-item">
+                  <h3>{f.q}</h3>
+                  <p>{f.a}</p>
+                </div>
+              ))}
+            </section>
 
             <h2>Sources</h2>
             {c.sources.length > 0 ? (
