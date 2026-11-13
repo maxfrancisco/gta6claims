@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { NEW_RELIC } from "@/lib/site";
 
 const CONTACT = "privacy@gta6claims.com";
 
@@ -78,6 +79,13 @@ export default function PrivacyPage() {
             </a>{" "}
             to stop being counted.
           </li>
+          {NEW_RELIC && (
+            <li>
+              <strong>New Relic</strong> measures how fast pages load and records errors in your
+              browser, so we can fix problems. It receives your IP address, browser type and the
+              pages you visit, and sets a cookie for the session.
+            </li>
+          )}
           <li>
             <strong>Google AdSense</strong> serves the ads described above.
           </li>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import NewRelic from "@/components/NewRelic";
 import "./globals.css";
 import { ADSENSE_CLIENT, SITE_URL } from "@/lib/site";
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
       </head>
       <body>
+        <NewRelic />
         <header className="site-header">
           <div className="wrap">
             <Link href="/" className="brand">GTA 6 Claims</Link>
