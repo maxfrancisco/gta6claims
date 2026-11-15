@@ -523,6 +523,56 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     ],
   },
 
+  // ---------------- Leaks ----------------
+  "leaked-first-mission-footage": {
+    question: "Is the leaked GTA 6 first mission footage real?",
+    body: [
+      "Almost certainly not. A clip claiming to show GTA 6's opening mission went viral this week, but no news outlet has verified it, and Reddit users who broke it down frame by frame say the voices are fake and the footage appears to be built in GTA 5.",
+      "Fakes like this are common before a big launch. Some are AI-generated, some are GTA 5 mods dressed up as GTA 6, and at least one viral clip was made by a creator who later admitted rebuilding a scene from scratch to see if people would believe it. Another clip this week fooled many viewers with how lifelike it looked, until people realized it was a recreation, not a leak.",
+      "Real GTA 6 footage does exist: Rockstar's trailers, its August 2026 Extended Look and the 2022 hack that Rockstar itself confirmed. Anything else should be treated as unverified until the game is out on November 19.",
+    ],
+    faq: [
+      { q: "How can you tell if a GTA 6 leak is fake?", a: "Check whether a reputable outlet has verified it, look for GTA 5 assets, menus or vehicles, and be wary of perfect-looking footage with no source. A Reddit post alone isn't proof." },
+      { q: "Was GTA 6 really leaked before?", a: "Yes. In September 2022 Rockstar confirmed a hacker had stolen and posted early development footage." },
+    ],
+  },
+  "leaked-full-map-image": {
+    question: "Is the leaked GTA 6 map real?",
+    body: [
+      "Not confirmed. The map image circulating this week appears to be an AI-upscaled version of a low-quality photo. Upscaling invents detail that wasn't in the original, so small features, including whether Key West is there, can't be trusted.",
+      "A separate collector-style map that surfaced on November 12 drew similar doubts. Reddit users pointed out it looks like a stylized, theme-park-style illustration rather than a real game map, which makes it useless for working out the actual layout. Others have noticed that some 'leaked maps' resemble maps from other open-world games.",
+      "Rockstar has named the Leonida Keys as a region but hasn't shown whether the island at their far end, Key West's equivalent, is in the game. Fans think it may have been folded into other islands. We'll know when the in-game map opens on November 19.",
+    ],
+    faq: [
+      { q: "Is Key West in GTA 6?", a: "Unknown. Rockstar hasn't shown it, and the leaked maps that leave it out aren't reliable." },
+      { q: "Is there an official GTA 6 map?", a: "Not a full one. Rockstar has named the regions, and fan projects have reconstructed the rest from trailers." },
+    ],
+  },
+  "review-copies-locked-down": {
+    question: "Are GTA 6 review copies locked down?",
+    body: [
+      "Probably more than usual, but the details are unconfirmed. This week's viral post claimed Rockstar and PlayStation are tightly controlling access to review copies, but Reddit commenters questioned both the account's track record and its technical explanation.",
+      "Earlier reports went further, saying reviewers might have to play at secure locations or travel to Rockstar under supervision. More recent reports say watermarked review copies went out ahead of launch, so any leak could be traced back to its source. Take-Two has said reviews matter to the launch, and Rockstar hasn't described its process.",
+      "The worry is real. Other big games have leaked through review copies days before release. Reviews are reported to go live on November 18, and how reviewers describe their access then should settle it.",
+    ],
+    faq: [
+      { q: "Do reviewers have GTA 6 early?", a: "Reports say review copies went out ahead of launch. Rockstar hasn't confirmed the details." },
+      { q: "When do GTA 6 reviews come out?", a: "Reportedly November 18, the day before launch. Rockstar hasn't announced it." },
+    ],
+  },
+  "leaked-108-artist-list": {
+    question: "Who's on the GTA 6 soundtrack?",
+    body: [
+      "Rockstar's official soundtrack album, Grand Theft Auto VI: The Album, has 34 songs from artists including Travis Scott, Future, Metro Boomin and Morgan Wallen. A tracklist from an advance vinyl copy also lists names like Dua Lipa, Lana Del Rey and Playboi Carti.",
+      "The '108 artists' list that started circulating on November 14 claims to show the wider in-game radio lineup. It isn't confirmed, and fans quickly pointed out it's missing artists who are already on the official album, so even if parts are real, it isn't complete.",
+      "GTA games usually feature far more music on the in-game radio than on any album, so a list longer than 34 is plausible. The full lineup will be clear once players can tune through every station on November 19.",
+    ],
+    faq: [
+      { q: "How many songs are on the GTA 6 album?", a: "34, according to Rockstar's official album and the vinyl tracklist." },
+      { q: "Is Playboi Carti on the GTA 6 soundtrack?", a: "He's listed on the album's leaked vinyl tracklist. The in-game radio lineup isn't confirmed yet." },
+    ],
+  },
+
   // ---------------- Easter eggs ----------------
   "bigfoot-in-the-grassrivers": {
     question: "Is there Bigfoot in GTA 6?",

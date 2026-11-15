@@ -10,7 +10,7 @@
 
 export type Verdict = "CONFIRMED" | "BUSTED" | "UNVERIFIED";
 
-export type Category = "Release" | "Gameplay" | "World" | "Easter eggs" | "Real world";
+export type Category = "Release" | "Gameplay" | "World" | "Leaks" | "Easter eggs" | "Real world";
 
 export type Source = { label: string; url: string };
 
@@ -47,10 +47,11 @@ export const VERDICT_BLURB: Record<Verdict, string> = {
   UNVERIFIED: "Not confirmed or ruled out yet. We test these on launch day.",
 };
 
-export const CATEGORIES: Category[] = ["Release", "Gameplay", "World", "Easter eggs", "Real world"];
+export const CATEGORIES: Category[] = ["Release", "Gameplay", "World", "Leaks", "Easter eggs", "Real world"];
 
 const D = "2026-11-12";
 const N = "2026-11-13";
+const L = "2026-11-15";
 
 export const CLAIMS: Claim[] = [
   // ---------- Release ----------
@@ -694,6 +695,74 @@ export const CLAIMS: Claim[] = [
       { label: "Red Bull: Lucia explained", url: "https://www.redbull.com/int-en/gta-6-lucia-caminos" },
     ],
     updated: N,
+  },
+
+  // ---------- Leaks: added November 15, 2026 ----------
+  {
+    slug: "leaked-first-mission-footage",
+    claim: "Leaked footage shows GTA 6's first mission.",
+    short: "Leaked footage shows the first mission",
+    category: "Leaks",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "No outlet has verified it, and it shows strong signs of being fake. Viewers say the voices are fabricated and the clip appears to be made in GTA 5.",
+    howToTest: "Play the opening of the game on November 19 and compare.",
+    sources: [
+      { label: "Reddit r/gta6_official: 'Everything in the video is fake'", url: "https://www.reddit.com/r/gta6_official/comments/1xwubxp/comment/19so9pznbb874/" },
+      { label: "GTA Boom: The viral gameplay leak is almost certainly fake", url: "https://www.gtaboom.com/the-viral-gta-6-gameplay-leak-is-almost-certainly-fake-6c39" },
+      { label: "Reddit r/GTA6: Realistic clip fooled viewers", url: "https://www.reddit.com/r/GTA6/comments/1xtrx0p/comment/19shpkb639t8l/" },
+    ],
+    updated: L,
+    trending: true,
+  },
+  {
+    slug: "leaked-full-map-image",
+    claim: "A leaked image shows the full GTA 6 map, and Key West isn't on it.",
+    short: "Leaked map image shows no Key West",
+    category: "Leaks",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "The viral image looks like an AI-upscaled version of a blurry photo, so its details can't be trusted. Rockstar hasn't said whether Key West is in the game.",
+    howToTest: "Open the in-game map on November 19 and look at the western end of the Leonida Keys.",
+    sources: [
+      { label: "Reddit r/GTA6unmoderated: 'An AI upscale of a crummy picture'", url: "https://www.reddit.com/r/GTA6unmoderated/comments/1xwqsli/comment/19soaj3d53r5w/" },
+      { label: "Reddit r/GTA: Collector map is based on a theme park-style map", url: "https://www.reddit.com/r/GTA/comments/1xuoz8e/comment/19sjk790uwbok/" },
+      { label: "GTA News: Will Key West be in GTA 6?", url: "https://gtanews.fr/en/articles/gta-6-key-west-map-debate-leonida-keys/" },
+    ],
+    updated: L,
+    trending: true,
+  },
+  {
+    slug: "review-copies-locked-down",
+    claim: "Rockstar and PlayStation are tightly locking down GTA 6 review copies.",
+    short: "Review copies are under tight lockdown",
+    category: "Leaks",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "Reports conflict. Some said reviewers would play only at secure locations, later ones said watermarked copies were sent out. Rockstar hasn't confirmed either.",
+    howToTest: "Read how reviewers describe their access when reviews go up, reportedly on November 18.",
+    sources: [
+      { label: "Reddit r/GamingLeaksAndRumours: Commenters doubt the source", url: "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1xwj3on/comment/19snhwf16b944/" },
+      { label: "Digital Citizen: Review copies may be locked down", url: "https://www.digitalcitizen.life/gta-6-review-copies-may-be-locked-down-to-stop-early-leaks/" },
+      { label: "TweakTown: Insider claims no review copies", url: "https://www.tweaktown.com/news/111646/rockstar-games-will-not-send-gta-6-review-copies-to-journalists-and-media-claims-insider/index.html" },
+    ],
+    updated: L,
+  },
+  {
+    slug: "leaked-108-artist-list",
+    claim: "A leaked list shows all 108 artists on the GTA 6 soundtrack.",
+    short: "Leaked list shows 108 soundtrack artists",
+    category: "Leaks",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "The list isn't confirmed, and fans note it misses artists already on Rockstar's official 34-track album. The full in-game radio lineup will be clear at launch.",
+    howToTest: "Flip through the in-game radio stations after launch.",
+    sources: [
+      { label: "Reddit r/JuiceWRLD: 'This ain't the full list'", url: "https://www.reddit.com/r/JuiceWRLD/comments/1xw6toi/comment/19sms1p6mt0wy/" },
+      { label: "Billboard: GTA 6 album tracklist", url: "https://www.billboard.com/music/music-news/gta-6-album-tracklist-grand-theft-auto-vi-soundtrack-1236382244/" },
+      { label: "Keengamer: Full album tracklist leaks", url: "https://www.keengamer.com/articles/news/gta-6-full-album-tracklist-leaks-revealing-all-34-songs-and-artists/" },
+    ],
+    updated: L,
   },
 
 ];
