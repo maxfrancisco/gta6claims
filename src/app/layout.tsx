@@ -39,6 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Link href="/" className="brand">GTA 6 Claims</Link>
             <nav className="nav" aria-label="Main">
               <Link href="/claims/">Claims</Link>
+              <Link href="/status/">Status</Link>
               <Link href="/places/">Real places</Link>
               <Link href="/submit/">Submit a claim</Link>
             </nav>

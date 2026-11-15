@@ -219,7 +219,7 @@ export const CLAIMS: Claim[] = [
       { label: "MP1st: GTA 6 marketed as single-player", url: "https://mp1st.com/news/rockstar-wont-talk-about-gta-6-online-game-marketed-as-single-player-experience" },
       { label: "Outlook Respawn: Online plans still under wraps", url: "https://respawn.outlookindia.com/gaming/gaming-news/gta-6-online-plans-remain-under-wraps-ahead-of-november-release" },
     ],
-    updated: D,
+    updated: L,
     trending: true,
   },
   {
@@ -500,12 +500,13 @@ export const CLAIMS: Claim[] = [
     category: "Release",
     verdict: "CONFIRMED",
     verdictText:
-      "Rockstar's support page says midnight local time on November 19 in every region. In the US, store listings follow Eastern time, so the West Coast can start at 9 p.m. on November 18.",
+      "Rockstar's support page says midnight local time on November 19 in every region. PlayStation Store listings reportedly use one US time, so the West Coast may start at 9 p.m. on November 18.",
     sources: [
+      { label: "Rockstar Support: Regional pre-load and release times", url: "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s" },
       { label: "Forbes: GTA 6 unlocks at midnight on November 19", url: "https://www.forbes.com/sites/brianmazique/2026/11/12/gta-6-unlocks-at-midnight-on-november-19-but-millions-of-americans-can-start-playing-the-night-before/" },
       { label: "Push Square: GTA 6 release times", url: "https://www.pushsquare.com/guides/gta-6-release-times-when-can-you-start-playing" },
     ],
-    updated: N,
+    updated: L,
     trending: true,
   },
   {
@@ -761,6 +762,99 @@ export const CLAIMS: Claim[] = [
       { label: "Reddit r/JuiceWRLD: 'This ain't the full list'", url: "https://www.reddit.com/r/JuiceWRLD/comments/1xw6toi/comment/19sms1p6mt0wy/" },
       { label: "Billboard: GTA 6 album tracklist", url: "https://www.billboard.com/music/music-news/gta-6-album-tracklist-grand-theft-auto-vi-soundtrack-1236382244/" },
       { label: "Keengamer: Full album tracklist leaks", url: "https://www.keengamer.com/articles/news/gta-6-full-album-tracklist-leaks-revealing-all-34-songs-and-artists/" },
+    ],
+    updated: L,
+  },
+
+  // ---------- Launch week: added November 15, 2026 from Google Trends ----------
+  {
+    slug: "you-can-play-gta-6-early",
+    claim: "You can play GTA 6 early.",
+    short: "You can play GTA 6 early",
+    category: "Release",
+    verdict: "BUSTED",
+    verdictText:
+      "There's no early access. You can pre-load the game now, but it stays locked until midnight local time on November 19 for every edition, Ultimate included.",
+    sources: [
+      { label: "Rockstar Support: GTA VI Pre-Load FAQ", url: "https://support.rockstargames.com/articles/7nPqOA2uCbpEQHXx7KVrYd/grand-theft-auto-vi-pre-load-faq" },
+      { label: "Rockstar Support: Regional pre-load and release times", url: "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s" },
+    ],
+    updated: L,
+    trending: true,
+  },
+  {
+    slug: "preload-starts-november-10",
+    claim: "GTA 6 pre-loading opened on November 10.",
+    short: "GTA 6 pre-loading opened November 10",
+    category: "Release",
+    verdict: "CONFIRMED",
+    verdictText:
+      "Rockstar opened pre-loads on November 10: at midnight local time on PS5, and at midnight GMT worldwide on Xbox, which was the evening of November 9 in the Americas.",
+    sources: [
+      { label: "Rockstar Support: GTA VI Pre-Load FAQ", url: "https://support.rockstargames.com/articles/7nPqOA2uCbpEQHXx7KVrYd/grand-theft-auto-vi-pre-load-faq" },
+      { label: "Keengamer: Preload date and release times guide", url: "https://www.keengamer.com/articles/guides/gta-6-preload-date-and-global-release-times-guide/" },
+    ],
+    updated: L,
+    trending: true,
+  },
+  {
+    slug: "gta-6-has-a-day-one-patch",
+    claim: "GTA 6 already has a patch before launch.",
+    short: "GTA 6 already has a pre-launch patch",
+    category: "Release",
+    verdict: "CONFIRMED",
+    verdictText:
+      "Update 1.002 is rolling out: about 1.07 GB on PS5 and about 2.18 GB on Xbox. Rockstar hasn't published patch notes or called it the day-one patch.",
+    sources: [
+      { label: "Vice: GTA 6 day one patch is already rolling out on PS5", url: "https://www.vice.com/en/article/gta-6-day-one-patch-ps5-version-1002/" },
+      { label: "Keengamer: Update 1.002 rolls out on PS5 and Xbox", url: "https://www.keengamer.com/articles/news/gta-6-update-1-002-starts-rolling-out-on-ps5-and-xbox-ahead-of-launch/" },
+    ],
+    updated: L,
+    trending: true,
+  },
+  {
+    slug: "gta-6-downgraded-on-xbox",
+    claim: "GTA 6 is downgraded on Xbox.",
+    short: "GTA 6 is downgraded on Xbox",
+    category: "Release",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "Analysts expect the Xbox Series S to run at a much lower resolution, somewhere between 720p and 1080p. Series X should be close to PS5. Rockstar hasn't published resolutions for any console.",
+    howToTest: "Compare Series S, Series X and PS5 footage once the game is out, or wait for Digital Foundry's analysis.",
+    sources: [
+      { label: "GTA Boom: Digital Foundry's outlook for Xbox Series S", url: "https://www.gtaboom.com/digital-foundry-explains-why-gta-6-could-look-dramatically-different-on-xbox-series-s-250a" },
+      { label: "ComicBook: Report warns of downgrade for Xbox", url: "https://comicbook.com/gaming/news/gta-6-grand-theft-auto-vi-xbox-series-x-downgrade/" },
+      { label: "Push Square: 30 fps target on every console", url: "https://www.pushsquare.com/news/2026/11/gta-6-ps5-pro-features-revealed-30fps-target-on-both-consoles" },
+    ],
+    updated: L,
+    trending: true,
+  },
+  {
+    slug: "gta-6-cost-2-billion",
+    claim: "GTA 6 cost $2 billion to make.",
+    short: "GTA 6 cost $2 billion to make",
+    category: "Release",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "Take-Two has never disclosed the budget. Analyst estimates mostly land between $1 billion and $1.5 billion, and the $2 billion figure usually includes marketing.",
+    sources: [
+      { label: "GameLuster: The $2 billion claim explained", url: "https://gameluster.com/did-gta-6-really-cost-2-billion-to-make-what-the-e/" },
+      { label: "GadgetReview: The estimated $1.5 billion budget", url: "https://www.gadgetreview.com/gtas-6s-estimated-1-5-billion-budget-makes-call-of-duty-look-like-a-bargain" },
+    ],
+    updated: L,
+  },
+  {
+    slug: "preloads-slowing-down-the-internet",
+    claim: "GTA 6 pre-loads are slowing down the internet.",
+    short: "GTA 6 pre-loads are slowing the internet",
+    category: "Release",
+    verdict: "CONFIRMED",
+    verdictText:
+      "Some networks did slow down. UK provider YouFibre told customers GTA 6 downloads overloaded part of its network, and other providers reported record traffic.",
+    sources: [
+      { label: "Dexerto: GTA 6 is causing internet issues", url: "https://www.dexerto.com/gta/gta-6-is-causing-internet-issues-as-players-rush-to-preload-3427231/" },
+      { label: "Tech Times UK: YouFibre network congestion", url: "https://www.techtimes.co.uk/gta-6-preloads-youfibre-network-congestion-yorkshire-1809903" },
+      { label: "mxdwn Games: Providers report record traffic", url: "https://games.mxdwn.com/news/gta-6-pre-loads-drive-record-internet-traffic-as-broadband-providers-report-surges/" },
     ],
     updated: L,
   },

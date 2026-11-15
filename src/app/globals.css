@@ -360,3 +360,56 @@ main { flex: 1; }
 .faq { margin: 2rem 0; }
 .faq-item { border-top: 1px solid var(--line); padding-top: 0.9rem; }
 .faq-item h3 { font-size: 1.08rem; margin-bottom: 0.3rem; }
+
+/* ================= Status tracker ================= */
+.status-hero { padding-block: 2rem 2.5rem; border-top: 10px solid var(--line); }
+.status-ok { border-top-color: var(--confirmed); }
+.status-issues { border-top-color: var(--unverified); }
+.status-outage { border-top-color: var(--busted); }
+.status-pill {
+  display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 800;
+  border: 2px solid var(--asphalt); border-radius: 999px; padding: 0.35rem 0.9rem 0.2rem;
+}
+.status-dot { width: 0.8rem; height: 0.8rem; border-radius: 50%; background: var(--muted); }
+.status-ok .status-dot { background: #2f9e5b; }
+.status-issues .status-dot { background: #e0a400; }
+.status-outage .status-dot { background: var(--busted); }
+.status-headline { font-size: 1.35rem; font-weight: 700; }
+.check-links { list-style: none; padding: 0; margin: 0 0 1rem; display: grid; gap: 0.6rem; }
+.check-links li { display: flex; flex-direction: column; }
+.check-links a { font-weight: 700; }
+.issues { list-style: none; padding: 0; margin: 0 0 1rem; display: grid; gap: 1rem; }
+.issue { background: var(--white); border: 2px solid var(--asphalt); border-radius: 12px; padding: 1rem 1.2rem 0.3rem; border-left-width: 8px; }
+.issue-fixed { border-left-color: var(--confirmed); }
+.issue-workaround { border-left-color: var(--unverified); }
+.issue-investigating, .issue-not_fixed { border-left-color: var(--busted); }
+.issue-head { display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; margin-bottom: 0.4rem; }
+.issue-state { font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 6px; padding: 0.2rem 0.5rem 0.05rem; }
+.issue-state-fixed { background: var(--confirmed); color: var(--white); }
+.issue-state-workaround { background: var(--unverified); color: var(--asphalt); }
+.issue-state-investigating, .issue-state-not_fixed { background: var(--busted); color: var(--white); }
+.issue h3 { margin-bottom: 0.35rem; }
+.patch { border-top: 2px solid var(--asphalt); padding-top: 1rem; margin-bottom: 1.5rem; }
+.patch ul { max-width: var(--measure); padding-left: 1.25rem; }
+.patch-sizes { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 0 0 0.75rem; }
+.patch-sizes div { border: 2px solid var(--asphalt); border-radius: 8px; padding: 0.4rem 0.75rem 0.25rem; }
+.patch-sizes dt { font-size: 0.85rem; color: var(--muted); }
+.patch-sizes dd { margin: 0; font-weight: 800; }
+.table-scroll { overflow-x: auto; margin-bottom: 0.75rem; }
+.perf { border-collapse: collapse; width: 100%; min-width: 640px; background: var(--white); border: 2px solid var(--asphalt); }
+.perf th, .perf td { text-align: left; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 0.97rem; }
+.perf thead th { background: var(--asphalt); color: var(--white); }
+.basis { font-weight: 700; font-size: 0.8rem; border-radius: 5px; padding: 0.1rem 0.4rem 0; white-space: nowrap; }
+.basis-official { background: var(--confirmed); color: var(--white); }
+.basis-mixed { background: var(--sky); color: var(--asphalt); }
+.basis-estimate { background: #fff3c4; color: #6b4a00; }
+.timeline { list-style: none; padding: 0; margin: 0 0 1rem; border-left: 3px solid var(--asphalt); }
+.timeline li { position: relative; padding: 0 0 1.1rem 1.25rem; display: flex; flex-direction: column; max-width: var(--measure); }
+.timeline li::before { content: ""; position: absolute; left: -0.55rem; top: 0.3rem; width: 0.8rem; height: 0.8rem; border-radius: 50%; background: var(--white); border: 3px solid var(--asphalt); }
+.timeline li.done::before { background: var(--asphalt); }
+.t-date { font-size: 0.85rem; color: var(--muted); font-weight: 700; }
+
+/* Home: launch status strip */
+.status-strip { background: var(--asphalt); color: var(--white); }
+.status-strip .wrap { display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; padding-block: 0.75rem; }
+.status-strip a { color: var(--sun); font-weight: 700; }

@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/submit/`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
     { url: `${SITE_URL}/privacy/`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
     { url: `${SITE_URL}/claims/`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
+    { url: `${SITE_URL}/status/`, lastModified: now, changeFrequency: "hourly", priority: 0.9 },
     ...CLAIMS.map((c) => ({
       url: `${SITE_URL}/claims/${c.slug}/`,
       lastModified: new Date(`${c.updated}T12:00:00Z`),

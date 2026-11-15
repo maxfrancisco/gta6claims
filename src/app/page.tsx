@@ -4,6 +4,7 @@ import ClaimBoard from "@/components/ClaimBoard";
 import SignupForm from "@/components/SignupForm";
 import VerdictStamp from "@/components/VerdictStamp";
 import { CLAIMS, countByVerdict } from "@/lib/claims";
+import { STATUS, STATUS_LABEL } from "@/lib/status";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -15,6 +16,14 @@ export default function Home() {
 
   return (
     <>
+      <div className={`status-strip status-${STATUS.level.toLowerCase()}`}>
+        <div className="wrap">
+          <span className="status-dot" aria-hidden="true" />
+          <strong>{STATUS_LABEL[STATUS.level]}:</strong>
+          <span>{STATUS.headline}</span>
+          <Link href="/status/">Status, patches and known issues →</Link>
+        </div>
+      </div>
       <section className="hero">
         <div className="wrap hero-grid">
           <div>

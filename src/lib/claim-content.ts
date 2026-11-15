@@ -144,13 +144,14 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     ],
   },
   "gta-online-launches-same-day": {
-    question: "Does GTA 6 have online multiplayer at launch?",
+    question: "When does GTA 6 Online come out?",
     body: [
-      "As far as anyone knows, no. Rockstar is marketing GTA 6 as a single-player game and hasn't announced an online mode or a date for one.",
+      "Rockstar hasn't announced a date, or even confirmed an online mode. GTA 6 launches on November 19 as a single-player game, and Rockstar's marketing calls it a single-player experience.",
       "GTA Online didn't launch with GTA 5 either. It arrived two weeks later, in October 2013. Some reports suggest a similar gap this time, while others expect a much longer wait. None of those timelines come from Rockstar.",
       "Dataminers claim to have found multiplayer code in the launch files, which is why we're keeping this open until people can check the main menu on November 19.",
     ],
     faq: [
+      { q: "Does GTA 6 have online multiplayer at launch?", a: "Not as far as anyone knows. No online mode has been announced for launch day." },
       { q: "Will GTA 6 online be cross platform?", a: "Rockstar hasn't announced an online mode, so it hasn't said anything about crossplay either." },
       { q: "Will GTA Online stay up after GTA 6 comes out?", a: "Rockstar hasn't announced any plans to shut down GTA Online." },
     ],
@@ -186,7 +187,7 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     question: "What time does GTA 6 come out?",
     body: [
       "GTA 6 unlocks at midnight local time on November 19, 2026, according to Rockstar's support page. That means it starts in Australia and New Zealand and rolls west around the world.",
-      "In the US, the store listings use Eastern time for the whole country. That puts the unlock at 12 a.m. Eastern on November 19, which is 11 p.m. Central, 10 p.m. Mountain and 9 p.m. Pacific on November 18.",
+      "In the US, PlayStation Store listings reportedly use a single Eastern-time unlock for the whole country. If that holds, the game unlocks at 12 a.m. Eastern on November 19, which is 11 p.m. Central, 10 p.m. Mountain and 9 p.m. Pacific on November 18. Rockstar's own wording just says midnight local time, so West Coast players should check their console on the evening of the 18th.",
       "Pre-load the game ahead of time so you can start playing the moment it unlocks.",
     ],
     faq: [
@@ -223,7 +224,7 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     body: [
       "Rockstar says GTA 6 needs up to 212 GB of free space, and the exact figure varies by console. It's one of the largest console installs ever.",
       "A launch-model PS5 has about 667 GB of usable space, so GTA 6 alone takes roughly a third of it. Newer 1 TB models have a bit more room. Xbox Series S owners, with much less storage, will likely need to clear games or add an expansion card.",
-      "Pre-loading opened before launch for digital copies, so check your free space now and delete what you don't need.",
+      "Pre-loading opened on November 10, so check your free space now and delete what you don't need. The first update, 1.002, adds roughly another 1 to 2 GB.",
     ],
     faq: [
       { q: "Can I play GTA 6 from an external drive?", a: "On PS5, games must run from internal or M.2 storage. On Xbox, current-generation games need internal storage or an official expansion card." },
@@ -520,6 +521,80 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     faq: [
       { q: "What is the GTA 6 mapping project?", a: "A fan effort that reconstructs Leonida from official footage. It isn't affiliated with Rockstar." },
       { q: "Does GTA 6 come with a paper map?", a: "Past GTAs did. Rockstar hasn't confirmed one for GTA 6." },
+    ],
+  },
+
+  // ---------------- Launch week ----------------
+  "you-can-play-gta-6-early": {
+    question: "Can you play GTA 6 early?",
+    body: [
+      "No. There's no early access for GTA 6, including for Ultimate Edition buyers. You can pre-load the game now so it's ready, but it stays locked until midnight local time on November 19.",
+      "Pre-loading opened on November 10. Once the download finishes, the game appears in your library but won't start until the unlock. Boxed copies work the same way: they contain a download code, not a disc, so redeem the code to pre-load.",
+      "Videos and posts promising early access are usually old trailer footage, fake leaks or scams. Never enter your PlayStation or Xbox login on a site offering early access.",
+    ],
+    faq: [
+      { q: "Does the Ultimate Edition have early access?", a: "No. Every edition unlocks at the same time." },
+      { q: "When is GTA 6 playable?", a: "From midnight local time on November 19, 2026." },
+    ],
+  },
+  "preload-starts-november-10": {
+    question: "How do you preload GTA 6?",
+    body: [
+      "Pre-loading opened on November 10, 2026. On PS5, it started at midnight in your local time zone. On Xbox Series X|S, it opened at the same moment worldwide, midnight GMT, which was 7 p.m. Eastern on November 9 in the US.",
+      "To pre-load on PS5, go to your Game Library, find Grand Theft Auto VI under Purchased, and select Download. On Xbox, open My Games and Apps, then Full Library, then Owned Games, and install it from there. If you bought a boxed copy, redeem the code in the box first. Turning on automatic downloads means the pre-load and any updates install while the console is in rest mode.",
+      "You need up to 212 GB of free space. Preloading now also gets you the first update, 1.002, before launch, so you won't be stuck downloading on launch night.",
+    ],
+    faq: [
+      { q: "When can I download GTA 6?", a: "Now. Pre-loading opened on November 10, 2026." },
+      { q: "Why is my GTA 6 preload so slow?", a: "Huge demand. Some internet providers reported record traffic. Try downloading overnight, and pause and resume if it stalls." },
+    ],
+  },
+  "gta-6-has-a-day-one-patch": {
+    question: "Is there a GTA 6 day one patch?",
+    body: [
+      "Yes, an update is already out. Version 1.002 started rolling out a week before launch: about 1.07 GB on PS5 and about 2.18 GB on Xbox Series X|S. On PS5, it reached players in two waves.",
+      "Rockstar hasn't published patch notes and hasn't called it the day-one patch, so what it changes is unknown. Patches released this close to launch usually fix bugs found after the game went gold.",
+      "If you pre-load, the update downloads automatically. Another patch could still arrive on launch day. We track every update on our GTA 6 status page.",
+    ],
+    faq: [
+      { q: "How big is the GTA 6 day one patch?", a: "Update 1.002 is about 1.07 GB on PS5 and about 2.18 GB on Xbox." },
+      { q: "Where are the GTA 6 patch notes?", a: "Rockstar hasn't published any for update 1.002 yet." },
+    ],
+  },
+  "gta-6-downgraded-on-xbox": {
+    question: "Is GTA 6 downgraded on Xbox?",
+    body: [
+      "On Xbox Series X, probably not by much. It targets the same 30 fps as PS5, and its hardware is at least as powerful. The worry is mainly about the Xbox Series S.",
+      "The Series S has less memory and GPU power than the other consoles. Digital Foundry and other analysts expect it to run at a much lower resolution, somewhere between 720p and 1080p, possibly with fewer effects. Rockstar hasn't published resolutions or graphics settings for any console, so those numbers are estimates.",
+      "Xbox One owners stream the game through Xbox Cloud Gaming, which runs it at Series S settings. The PS5 Pro is the only console with confirmed extras: ray-traced shadows and sharper image quality.",
+    ],
+    faq: [
+      { q: "Does GTA 6 run worse on Xbox Series S?", a: "Analysts expect a lower resolution than on PS5 or Series X. Rockstar hasn't confirmed numbers." },
+      { q: "Is GTA 6 better on PS5 or Xbox Series X?", a: "They should be very close. The PS5 Pro is the only version with confirmed extra features." },
+    ],
+  },
+  "gta-6-cost-2-billion": {
+    question: "How much did it cost to make GTA 6?",
+    body: [
+      "Nobody outside Take-Two knows. The company has never disclosed GTA 6's budget, and its CEO has said only that the game was expensive.",
+      "Most analyst estimates land between $1 billion and $1.5 billion. The $2 billion figure that circulates usually adds marketing on top of development, or rounds up a rough estimate. None of these numbers come from a corporate filing or an on-the-record statement.",
+      "For comparison, GTA 5 reportedly cost about $265 million to develop and market in 2013, and Red Dead Redemption 2 around $540 million. Even the lowest GTA 6 estimates would make it one of the most expensive entertainment projects ever made.",
+    ],
+    faq: [
+      { q: "Is GTA 6 the most expensive game ever made?", a: "Very likely, based on estimates, but the budget isn't public." },
+      { q: "How much did GTA 5 cost to make?", a: "About $265 million including marketing, according to reports at the time." },
+    ],
+  },
+  "preloads-slowing-down-the-internet": {
+    question: "Is GTA 6 slowing down the internet?",
+    body: [
+      "In some places, yes. When pre-loads opened on November 10, millions of players started downloading up to 212 GB at once.",
+      "UK provider YouFibre emailed customers that GTA 6 downloads had overloaded one of its network gateways, slowing speeds for everyone on it, including people who don't play. It later said emergency work was done but speeds could stay slower during the rush. Virgin Media O2 and Germany's 1&1 also reported record traffic.",
+      "If your download or your whole connection is slow, it's probably congestion rather than a problem with your console. Downloading overnight helps, and pausing and resuming a stalled download often restarts it at full speed.",
+    ],
+    faq: [
+      { q: "Is GTA 6 down?", a: "The game isn't out until November 19. Check our status page for outages and known issues." },
+      { q: "Why is my internet slow since GTA 6 pre-loads opened?", a: "Some providers' networks are congested by the downloads. Try again overnight." },
     ],
   },
 

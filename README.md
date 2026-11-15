@@ -71,6 +71,17 @@ All claims live in `src/lib/claims.ts`. Each one gets:
 Claim submissions land in **Table Editor > claim_submissions**; proof screenshots are in **Storage > submissions > claims/**.
 Vote totals: run `select * from claim_vote_totals();` in the SQL Editor.
 
+## Status tracker (/status/)
+
+Everything on the status page lives in `src/lib/status.ts`:
+- **`STATUS`**: the overall level (`OK`, `ISSUES` or `OUTAGE`), a one-line headline, and `updated` (set it every time you check). The headline also shows in the dark bar at the top of the home page.
+- **`ISSUES`**: known bugs, each marked `FIXED`, `WORKAROUND`, `INVESTIGATING` or `NOT_FIXED`, with what to do and sources.
+- **`PATCHES`**: every update, newest first, with sizes per console and plain-English notes.
+- **`PERFORMANCE`**: frame rate and resolution per console; switch `basis` from `Estimate` to `Official` as facts arrive.
+- **`TIMELINE`**: launch milestones; set `done: true` as they pass.
+
+Push and the page rebuilds in about a minute.
+
 ## Adding photos and places
 
 All content lives in `src/lib/places.ts`.
