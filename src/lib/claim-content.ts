@@ -14,13 +14,13 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
   "release-date-november-19-2026": {
     question: "When does GTA 6 come out?",
     body: [
-      "GTA 6 comes out on Thursday, November 19, 2026, on PlayStation 5 and Xbox Series X|S. Rockstar set that date in November 2025 when it moved the game back from May 26, 2026, and Take-Two repeated it in its earnings report in August 2026.",
-      "It's the game's third release target. Rockstar first aimed for fall 2025, then moved it to May 26, 2026, then to November 19. Take-Two's CEO said at the time that he was highly confident in the new date, and nothing since has suggested it will slip again.",
-      "The game unlocks at midnight local time, so players in Australia and New Zealand start first and the launch rolls west around the world. In the US, the West Coast can start playing at 9 p.m. Pacific on November 18.",
+      "GTA 6 came out on Thursday, November 19, 2026, on PlayStation 5 and Xbox Series X|S, right on schedule. Rockstar set that date in November 2025 when it moved the game back from May 26, 2026, and Take-Two repeated it in its earnings report in August 2026.",
+      "It's the game's third release target. Rockstar first aimed for fall 2025, then moved it to May 26, 2026, then to November 19. Take-Two's CEO said at the time that he was highly confident in the new date, and it held.",
+      "It unlocked at midnight local time, starting in Australia and New Zealand and rolling west around the world. Take-Two says it was the biggest entertainment launch ever, with $3.79 billion in day-one sales.",
     ],
     faq: [
       { q: "What day of the week does GTA 6 come out?", a: "Thursday. November 19, 2026 falls on a Thursday." },
-      { q: "Can I play GTA 6 early?", a: "No. You can pre-load it so it's ready to go, but it stays locked until midnight local time on November 19." },
+      { q: "Is GTA 6 out now?", a: "Yes. It has been out since November 19, 2026, on PS5 and Xbox Series X|S." },
     ],
   },
   "gta-6-was-delayed-twice": {
@@ -62,7 +62,7 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
   "gta-6-launches-on-pc": {
     question: "Is GTA 6 coming out on PC?",
     body: [
-      "Not on November 19. GTA 6 launches only on PS5 and Xbox Series X|S, and Rockstar hasn't announced a PC version or given one a date. Take-Two has said that any PC news will come from Rockstar.",
+      "No. GTA 6 launched only on PS5 and Xbox Series X|S, and Rockstar hasn't announced a PC version or given one a date. Take-Two has said that any PC news will come from Rockstar.",
       "A PC version is very likely eventually. Rockstar has brought every recent GTA and Red Dead game to PC, but always later. GTA 5 arrived on PC about a year and a half after its console release, and Red Dead Redemption 2 about a year after.",
       "Some reports point to 2027 for a PC release, but those come from anonymous sources, not from Rockstar.",
     ],
@@ -146,14 +146,13 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
   "gta-online-launches-same-day": {
     question: "When does GTA 6 Online come out?",
     body: [
-      "Rockstar hasn't announced a date, or even confirmed an online mode. GTA 6 launches on November 19 as a single-player game, and Rockstar's marketing calls it a single-player experience.",
-      "GTA Online didn't launch with GTA 5 either. It arrived two weeks later, in October 2013. Some reports suggest a similar gap this time, while others expect a much longer wait. None of those timelines come from Rockstar.",
-      "Dataminers claim to have found multiplayer code in the launch files, which is why we're keeping this open until people can check the main menu on November 19.",
+      "There's no date. GTA 6 launched on November 19 as a single-player game, and Rockstar still hasn't announced an online mode, a release window or which platforms it will be on.",
+      "Reports point to 2027. Twitch's CEO hinted multiplayer would come next year, and Bloomberg reporting has suggested roughly a year after the main game. None of that comes from Rockstar.",
+      "The existing GTA Online, built on GTA 5, keeps running. Take-Two said Rockstar will keep supporting it with new content and events.",
     ],
     faq: [
-      { q: "Does GTA 6 have online multiplayer at launch?", a: "Not as far as anyone knows. No online mode has been announced for launch day." },
-      { q: "Will GTA 6 online be cross platform?", a: "Rockstar hasn't announced an online mode, so it hasn't said anything about crossplay either." },
-      { q: "Will GTA Online stay up after GTA 6 comes out?", a: "Rockstar hasn't announced any plans to shut down GTA Online." },
+      { q: "Does GTA 6 have online multiplayer?", a: "Not yet. It launched as a single-player game." },
+      { q: "Will GTA Online shut down now that GTA 6 is out?", a: "No. Take-Two says Rockstar will keep supporting it." },
     ],
   },
   "vice-city-collectors-edition-box": {
@@ -208,15 +207,15 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     ],
   },
   "gta-6-is-already-out": {
-    question: "Is GTA 6 out yet?",
+    question: "Is GTA 6 out?",
     body: [
-      "Not yet. GTA 6 comes out on November 19, 2026, and unlocks at midnight local time.",
-      "You can pre-order it now and pre-load it, which downloads the game ahead of time. It stays locked until launch, so no one can play the full game early. Boxed copies reaching stores early contain a download code, not a playable disc.",
-      "Videos claiming to show early access are usually trailer footage, older leaks or fakes.",
+      "Yes. GTA 6 came out on Thursday, November 19, 2026, on PlayStation 5 and Xbox Series X|S. It unlocked at midnight local time, starting in Australia and New Zealand and rolling west.",
+      "It was the biggest entertainment launch ever. Take-Two says the game sold 32.5 million copies before release and $3.79 billion in retail sales on its first day, nearly five times GTA 5's first day in 2013. Critics scored it 99 on Metacritic.",
+      "It's still not on PC, and there's no online mode yet. Launch night had some bumps: PlayStation Network sign-in problems on November 18, and some boxed copies with missing or used codes. Our status page tracks what's broken and what's fixed.",
     ],
     faq: [
-      { q: "Can you play GTA 6 right now?", a: "No. It unlocks at midnight local time on November 19, 2026." },
-      { q: "How many days until GTA 6?", a: "It comes out on November 19, 2026." },
+      { q: "Is GTA 6 on PC yet?", a: "No. It's only on PS5 and Xbox Series X|S, and Rockstar hasn't announced a PC date." },
+      { q: "Did GTA 6 come out on time?", a: "Yes. It launched on November 19, 2026, the date Rockstar set a year earlier." },
     ],
   },
   "gta-6-needs-212-gb": {
@@ -292,51 +291,51 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     ],
   },
   "gta-6-has-crossplay": {
-    question: "Is GTA 6 going to be crossplay?",
+    question: "Is GTA 6 crossplay?",
     body: [
-      "Unknown. Rockstar hasn't announced crossplay, and it hasn't announced an online mode for crossplay to apply to. At launch, GTA 6 is a single-player game.",
-      "Rockstar's track record suggests caution. GTA Online has never let PlayStation and Xbox players into the same session, even on current consoles.",
-      "Once an online mode is announced, crossplay and cross-progression between PS5 and Xbox will be among the first things we check.",
+      "No, because it has no multiplayer to cross over. GTA 6 launched on November 19 as a single-player game, so PS5 and Xbox players can't play together, or with anyone at all.",
+      "When an online mode arrives, crossplay will be one of the first questions. Rockstar's track record isn't encouraging: GTA Online has never let PlayStation and Xbox players into the same session.",
+      "Your progress also doesn't carry between consoles. A save on PS5 stays on PS5.",
     ],
     faq: [
-      { q: "Will GTA 6 online be cross platform?", a: "Rockstar hasn't said. No online mode has been announced yet." },
-      { q: "Is GTA Online crossplay between PS5 and Xbox?", a: "No. GTA Online keeps PlayStation and Xbox players separate." },
+      { q: "Can I play GTA 6 with friends?", a: "Not yet. There's no online mode at launch." },
+      { q: "Will GTA 6 Online have crossplay?", a: "Rockstar hasn't said. Online itself hasn't been announced." },
     ],
   },
   "reviews-come-out-november-18": {
-    question: "When do GTA 6 reviews come out?",
+    question: "What are the GTA 6 reviews?",
     body: [
-      "Probably November 18, the day before launch. Insider Gaming reports that's when the review embargo lifts, which matches how GTA 5 and Red Dead Redemption 2 were handled.",
-      "Rockstar hasn't announced the date, so we're keeping this open. Some reports say certain outlets must wait until launch day to publish.",
-      "Reviews will show up on Metacritic and OpenCritic as soon as the embargo lifts.",
+      "Reviews went live on the morning of Wednesday, November 18, the day before launch, just as Insider Gaming had reported. More than 150 critics published at once.",
+      "They're close to unanimous. GTA 6 scored 99 on Metacritic, tying The Legend of Zelda: Ocarina of Time for the highest score in the site's history and topping GTA 4's 98, with no mixed or negative reviews. OpenCritic shows a similar score.",
+      "The main criticism is performance. There's no 60 fps mode, and several reviewers noted dips below 30 fps in heavy scenes, especially on the base PS5 and Xbox Series S.",
     ],
     faq: [
-      { q: "Is the GTA 6 review embargo November 18?", a: "That's the reported date. Rockstar hasn't confirmed it." },
-      { q: "Where can I read GTA 6 reviews?", a: "Metacritic and OpenCritic collect them as soon as they're published." },
+      { q: "What is GTA 6's Metacritic score?", a: "99, from more than 140 critics, as of launch week." },
+      { q: "Is GTA 6 the highest-rated game ever?", a: "It's tied with The Legend of Zelda: Ocarina of Time at 99 on Metacritic." },
     ],
   },
   "pre-orders-made-1-billion": {
-    question: "How much has GTA 6 made so far?",
+    question: "How much money has GTA 6 made?",
     body: [
-      "Nobody outside Take-Two knows for sure. Analyst firm estimates put pre-order revenue at around $750 million in early November, and one tally passed $1 billion by November 12.",
-      "Take-Two hasn't published a figure. Its CEO said only that pre-orders were reaching unprecedented levels. Bank of America estimates the game needs about $1.9 billion in sales to meet investor expectations for the year.",
-      "Take-Two is expected to share its first official numbers shortly after launch. GTA 5 made $1 billion in its first three days in 2013, a record at the time.",
+      "A lot more than $1 billion. Take-Two announced on November 20 that GTA 6 sold 32.5 million copies before launch, a record across all platforms, and $3.79 billion in retail sales on its first day.",
+      "Take-Two calls it the biggest launch in entertainment history, bigger than any movie's opening. For comparison, GTA 5 made about $800 million on its first day in 2013 and passed $1 billion in three days.",
+      "These are retail sales figures from Take-Two, not the company's own revenue, and it's unclear exactly how pre-orders are counted in the day-one total.",
     ],
     faq: [
-      { q: "How much did it cost to make GTA 6?", a: "Rockstar and Take-Two haven't disclosed the budget. Figures you see online are estimates." },
-      { q: "How many pre-orders does GTA 6 have?", a: "Estimates range from about 7.7 million to over 11 million. Take-Two hasn't confirmed a number." },
+      { q: "How many copies has GTA 6 sold?", a: "32.5 million before launch, according to Take-Two. A running total hasn't been published yet." },
+      { q: "How much did it cost to make GTA 6?", a: "Take-Two hasn't disclosed it. Estimates are $1 to $1.5 billion." },
     ],
   },
   "manni-perez-plays-lucia": {
     question: "Who plays Lucia in GTA 6?",
     body: [
-      "Rockstar hasn't confirmed who plays Lucia Caminos, one of GTA 6's two leads. The name fans link to the role most often is Manni L. Perez, an actor with TV credits including Law & Order: SVU and Chicago P.D.",
-      "The connection is based on her resemblance to Lucia's character model and comparisons with Lucia's voice in the trailers. Neither Rockstar nor the actress has confirmed it.",
-      "Other names spread earlier and turned out to be wrong. One actress said she'd only voiced a GTA Online character. The credits at launch should settle it.",
+      "Manni L. Perez. The game's credits confirm what fans had suspected for more than two years: Perez plays Lucia Caminos. She'd been the name most linked to the role since the trailers, based on her look and voice.",
+      "Jason Duval is played by Dylan Rourke, whose name wasn't public until launch. Other credited cast include Bobby Moynihan as Cal and Stephen Root as Brian Heder.",
+      "You can see the full credits in the game's settings menu.",
     ],
     faq: [
-      { q: "Who plays Jason in GTA 6?", a: "Rockstar hasn't confirmed the cast for either lead." },
-      { q: "Who is Lucia in GTA 6?", a: "Lucia Caminos is one of the two playable leads, alongside Jason." },
+      { q: "Who plays Jason in GTA 6?", a: "Dylan Rourke, according to the game's credits." },
+      { q: "Who is Lucia in GTA 6?", a: "Lucia Caminos is one of the two playable leads, alongside Jason Duval." },
     ],
   },
 
@@ -358,7 +357,7 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     body: [
       "Yes. The Extended Look gameplay video shows switching between Lucia and Jason, similar to how GTA 5 let you swap between its three leads.",
       "GTA 6 has two playable characters instead of three, and the story is built around the two of them working together.",
-      "How freely you can switch during missions and free roam is one of the details players will test after launch.",
+      "How freely you can switch during missions and free roam is one of the details players are still testing."
     ],
     faq: [
       { q: "How many playable characters are in GTA 6?", a: "Two: Lucia and Jason." },
@@ -370,10 +369,10 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     body: [
       "Yes. The Extended Look shows six wanted stars, bringing back the six-star maximum from older games like GTA San Andreas and GTA 4. GTA 5 capped it at five.",
       "The wanted system goes further than before. The HUD shows icons for whether the police know what you look like and what you're wearing.",
-      "How the sixth star escalates the response, whether it brings the military, SWAT or something new, is something players will find out after launch.",
+      "How the sixth star escalates the response, whether it brings the military, SWAT or something new, is something players are still working out."
     ],
     faq: [
-      { q: "What happens at six stars in GTA 6?", a: "Rockstar hasn't detailed it. Players will find out after launch." },
+      { q: "What happens at six stars in GTA 6?", a: "Rockstar hasn't detailed it, and players are still testing." },
       { q: "How many wanted stars did GTA 5 have?", a: "Five." },
     ],
   },
@@ -382,7 +381,7 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     body: [
       "Official footage shows the police tracking your appearance and outfit, with icons for both under your wanted level. That points to a system where changing your look matters.",
       "Previews describe police building a description from witnesses and cameras. How much a change of clothes helps you escape hasn't been shown in detail.",
-      "We'll test it at launch: get a wanted level, change outfits in a store, and see whether the outfit icon clears.",
+      "We're testing it: get a wanted level, change outfits in a store, and see whether the outfit icon clears.",
     ],
     faq: [
       { q: "Do cops remember your car in GTA 6?", a: "Previews say the police description can include your vehicle. Rockstar hasn't fully explained it." },
@@ -402,39 +401,39 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     ],
   },
   "story-is-80-hours": {
-    question: "How long is the GTA 6 story?",
+    question: "How long is GTA 6?",
     body: [
-      "The 80-hour figure comes from Rockstar North co-director Rob Nelson's own playthrough, which covered the story and some side activities. It isn't an official story length.",
-      "For comparison, GTA 5's main story takes most players around 30 to 40 hours, and completionists spend over 80.",
-      "Real completion times will vary a lot depending on how much you explore. We'll update this once players finish the game.",
+      "Most critics finished the main story in about 50 to 60 hours. Reviewers who explored more took 70 hours or longer, and one spent over 100.",
+      "The 80-hour figure came from a Rockstar North director's playthrough of the story plus some side activities, so it's closer to a relaxed playthrough than to the story alone.",
+      "Completionists should expect around 150 to 200 hours. For comparison, GTA 5's main story takes about 30 hours.",
     ],
     faq: [
-      { q: "How many missions are in GTA 6?", a: "Rockstar hasn't said." },
-      { q: "Is GTA 6 longer than Red Dead Redemption 2?", a: "Unknown until players finish it. RDR2's story runs around 50 to 60 hours for most players." },
+      { q: "How long does it take to 100% GTA 6?", a: "Estimates are around 150 to 200 hours." },
+      { q: "Is GTA 6 longer than GTA 5?", a: "Yes. Its main story is roughly twice as long." },
     ],
   },
   "gyms-make-you-stronger": {
-    question: "Can you work out at the gym in GTA 6?",
+    question: "Can you get muscles in GTA 6?",
     body: [
-      "Gyms appear in the Extended Look gameplay video, so you can visit them. Whether working out changes your character's body or stats hasn't been shown.",
-      "GTA San Andreas let you build muscle or gain weight at the gym and at restaurants, and fans have wanted that back ever since. GTA 5 dropped it.",
-      "We'll test it at launch by training for a few in-game days and comparing screenshots.",
+      "Yes. There are gyms across Vice City, and working out builds muscle and strength. Food and exercise visibly change Jason's and Lucia's bodies, so eating too much adds weight too.",
+      "Gym memberships are a one-time fee, and early safehouses have basic weights you can use for free. It's the first time since GTA San Andreas that the series has let your character's body change like this.",
+      "Exactly how much strength affects fighting, running or driving is still being tested by players.",
     ],
     faq: [
-      { q: "Can you get fat in GTA 6?", a: "Unknown. Rockstar hasn't shown body changes." },
-      { q: "Can you build muscle in GTA 6?", a: "Unknown until launch." },
+      { q: "Can you get fat in GTA 6?", a: "Yes. Eating more than you burn adds visible weight." },
+      { q: "Where are the gyms in GTA 6?", a: "In Vice City. Guides list nine fitness centers." },
     ],
   },
   "you-can-buy-houses": {
     question: "Can you buy houses in GTA 6?",
     body: [
-      "Rockstar hasn't shown buying property in GTA 6. The trailers and Extended Look don't include a property website or for-sale signs.",
-      "It would fit the series. GTA 5 let you buy businesses and garages, and Vice City Stories was built around buying property.",
-      "We'll check at launch for a property site on the in-game phone and buildings marked for sale.",
+      "Not so far. Players have found garages to buy around the map for more vehicle space, but no houses, apartments or businesses for sale.",
+      "Your homes come with the story instead. Safehouses change as the chapters progress.",
+      "That could change with updates or an online mode. GTA Online added property buying years after GTA 5 launched. We'll update this if players find a way.",
     ],
     faq: [
-      { q: "Can you buy businesses in GTA 6?", a: "Not shown yet. Previews suggest Jason and Lucia take jobs from clients, but buying businesses hasn't been confirmed." },
-      { q: "Does GTA 6 have safehouses?", a: "Rockstar hasn't detailed safehouses yet." },
+      { q: "Can you buy property in GTA 6?", a: "Only garages so far." },
+      { q: "Does GTA 6 have safehouses?", a: "Yes. They come with the story and change by chapter." },
     ],
   },
 
@@ -442,13 +441,13 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
   "enter-every-building": {
     question: "Can you go inside every building in GTA 6?",
     body: [
-      "Almost certainly not every one, but more than ever before. Rockstar has shown far more interiors than in past games, from shops and clubs to apartments, but has never said every building can be entered.",
-      "Every past GTA had locked doors and decorative buildings, and a city the size of Vice City with every interior modeled would be a massive undertaking.",
-      "Our launch-day test: walk one block of Ocean Drive and count how many doors open.",
+      "No, but you can go into far more than in any GTA before. Rockstar said there are hundreds of interiors, and players are finding shops, bars, clubs, gyms, banks and back offices you can walk into.",
+      "Many big buildings are still just scenery, and some major landmarks stay closed. GTA 5 had about 80 interiors, so this is still a huge jump.",
+      "Rockstar hasn't published an exact count. The 700 figure going around is unconfirmed.",
     ],
     faq: [
-      { q: "How many interiors are in GTA 6?", a: "Rockstar hasn't given a number." },
-      { q: "Can you go in shops in GTA 6?", a: "Yes, footage shows store interiors." },
+      { q: "How many interiors are in GTA 6?", a: "Hundreds, according to Rockstar. No exact count has been published." },
+      { q: "Can you enter shops in GTA 6?", a: "Yes. Most smaller shops and many businesses can be entered." },
     ],
   },
   "set-in-vice-city-leonida": {
@@ -514,13 +513,14 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
   "rockstar-released-the-full-map": {
     question: "Is there an official GTA 6 map?",
     body: [
-      "Not a full one. Rockstar has named Leonida's regions but hasn't published a complete map.",
+      "Yes, now that the game is out. The full map of Leonida is in the game, and players are filling in every road and landmark.",
+      "Rockstar still hasn't published a separate map image outside the game, so screenshots of the in-game map are the real reference now.",
       "The detailed maps you've seen come from fan mapping projects. The best known started in 2022 and has pieced Leonida together frame by frame from trailers, screenshots and leaks, releasing new versions as more footage appears.",
-      "Those maps are impressive detective work but aren't official. The real in-game map arrives on November 19, and boxed copies may include a printed map like past GTAs did.",
+      "Before launch, the detailed maps came from fan mapping projects built frame by frame from trailers and leaks. They got remarkably close, and now players can check them against the real thing.",
     ],
     faq: [
       { q: "What is the GTA 6 mapping project?", a: "A fan effort that reconstructs Leonida from official footage. It isn't affiliated with Rockstar." },
-      { q: "Does GTA 6 come with a paper map?", a: "Past GTAs did. Rockstar hasn't confirmed one for GTA 6." },
+      { q: "Is Key West in GTA 6?", a: "Still unconfirmed. Check our claim on the leaked map for the latest." },
     ],
   },
 
@@ -528,8 +528,8 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
   "you-can-play-gta-6-early": {
     question: "Can you play GTA 6 early?",
     body: [
-      "No. There's no early access for GTA 6, including for Ultimate Edition buyers. You can pre-load the game now so it's ready, but it stays locked until midnight local time on November 19.",
-      "Pre-loading opened on November 10. Once the download finishes, the game appears in your library but won't start until the unlock. Boxed copies work the same way: they contain a download code, not a disc, so redeem the code to pre-load.",
+      "No, and now you don't need it: GTA 6 has been out since November 19. There was no early access for any edition, Ultimate included. Pre-loaded copies stayed locked until midnight local time on launch day.",
+      "Boxed copies work like digital ones: they contain a download code, not a disc. Some buyers have reported boxes with missing or already-used codes; PlayStation's advice is to go back to the retailer.",
       "Videos and posts promising early access are usually old trailer footage, fake leaks or scams. Never enter your PlayStation or Xbox login on a site offering early access.",
     ],
     faq: [
@@ -552,25 +552,25 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
   "gta-6-has-a-day-one-patch": {
     question: "Is there a GTA 6 day one patch?",
     body: [
-      "Yes, an update is already out. Version 1.002 started rolling out a week before launch: about 1.07 GB on PS5 and about 2.18 GB on Xbox Series X|S. On PS5, it reached players in two waves.",
-      "Rockstar hasn't published patch notes and hasn't called it the day-one patch, so what it changes is unknown. Patches released this close to launch usually fix bugs found after the game went gold.",
-      "If you pre-load, the update downloads automatically. Another patch could still arrive on launch day. We track every update on our GTA 6 status page.",
+      "Yes, two of them. Version 1.002 rolled out the week before launch, about 1.07 GB on PS5 and about 2.18 GB on Xbox Series X|S, and version 1.002.001 followed on November 16.",
+      "Rockstar hasn't published patch notes for either, so what they change is unknown. Patches this close to launch usually fix bugs found after the game went gold. PS5 players also needed a PlayStation system update to play.",
+      "Updates download automatically if your console is set to. We track every update, its size and any notes on our GTA 6 status page.",
     ],
     faq: [
       { q: "How big is the GTA 6 day one patch?", a: "Update 1.002 is about 1.07 GB on PS5 and about 2.18 GB on Xbox." },
-      { q: "Where are the GTA 6 patch notes?", a: "Rockstar hasn't published any for update 1.002 yet." },
+      { q: "Where are the GTA 6 patch notes?", a: "Rockstar hasn't published any yet. Our status page lists every update as it lands." },
     ],
   },
   "gta-6-downgraded-on-xbox": {
     question: "Is GTA 6 downgraded on Xbox?",
     body: [
-      "On Xbox Series X, probably not by much. It targets the same 30 fps as PS5, and its hardware is at least as powerful. The worry is mainly about the Xbox Series S.",
-      "The Series S has less memory and GPU power than the other consoles. Digital Foundry and other analysts expect it to run at a much lower resolution, somewhere between 720p and 1080p, possibly with fewer effects. Rockstar hasn't published resolutions or graphics settings for any console, so those numbers are estimates.",
-      "Xbox One owners stream the game through Xbox Cloud Gaming, which runs it at Series S settings. The PS5 Pro is the only console with confirmed extras: ray-traced shadows and sharper image quality.",
+      "On Xbox Series S, yes. Digital Foundry's testing, as reported, shows it renders at 720p and upscales to 1080p, with frame rates often in the low-to-mid 20s in heavy scenes.",
+      "On Xbox Series X, no. It renders at about 1440p like the base PS5, and Xbox's 120Hz display mode makes its 30 fps feel slightly smoother. The base PS5 can dip into the low 20s during big explosions.",
+      "The PS5 Pro is the best version: sharper image, ray-traced shadows, and the steadiest 30 fps. Xbox One owners stream the game at Series S settings.",
     ],
     faq: [
-      { q: "Does GTA 6 run worse on Xbox Series S?", a: "Analysts expect a lower resolution than on PS5 or Series X. Rockstar hasn't confirmed numbers." },
-      { q: "Is GTA 6 better on PS5 or Xbox Series X?", a: "They should be very close. The PS5 Pro is the only version with confirmed extra features." },
+      { q: "Is GTA 6 better on PS5 or Xbox Series X?", a: "They're very close. Series X runs slightly smoother; the PS5 Pro beats both." },
+      { q: "Is GTA 6 playable on Xbox Series S?", a: "Yes, but at a lower resolution and less stable frame rate than other consoles." },
     ],
   },
   "gta-6-cost-2-billion": {
@@ -593,7 +593,7 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
       "If your download or your whole connection is slow, it's probably congestion rather than a problem with your console. Downloading overnight helps, and pausing and resuming a stalled download often restarts it at full speed.",
     ],
     faq: [
-      { q: "Is GTA 6 down?", a: "The game isn't out until November 19. Check our status page for outages and known issues." },
+      { q: "Is GTA 6 down?", a: "Check our status page for outages and known issues." },
       { q: "Why is my internet slow since GTA 6 pre-loads opened?", a: "Some providers' networks are congested by the downloads. Try again overnight." },
     ],
   },
@@ -624,27 +624,65 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     ],
   },
   "review-copies-locked-down": {
-    question: "Are GTA 6 review copies locked down?",
+    question: "How did GTA 6 reviewers get the game?",
     body: [
-      "Probably more than usual, but the details are unconfirmed. This week's viral post claimed Rockstar and PlayStation are tightly controlling access to review copies, but Reddit commenters questioned both the account's track record and its technical explanation.",
-      "Earlier reports went further, saying reviewers might have to play at secure locations or travel to Rockstar under supervision. More recent reports say watermarked review copies went out ahead of launch, so any leak could be traced back to its source. Take-Two has said reviews matter to the launch, and Rockstar hasn't described its process.",
-      "The worry is real. Other big games have leaked through review copies days before release. Reviews are reported to go live on November 18, and how reviewers describe their access then should settle it.",
+      "Mostly like any big game: review copies went out ahead of launch, and more than 150 reviews went live on November 18. The early rumors that reviewers would only play at secret, supervised locations didn't hold up.",
+      "A pre-launch claim that review copies carried flashing on-screen watermarks was also disputed by NateTheHate, the leaker it was pinned on, who said it wasn't accurate.",
+      "Rockstar likely did use extra precautions to trace leaks, as publishers often do, but there was no unusual lockdown.",
     ],
     faq: [
-      { q: "Do reviewers have GTA 6 early?", a: "Reports say review copies went out ahead of launch. Rockstar hasn't confirmed the details." },
-      { q: "When do GTA 6 reviews come out?", a: "Reportedly November 18, the day before launch. Rockstar hasn't announced it." },
+      { q: "When did GTA 6 reviews come out?", a: "November 18, the day before launch." },
+      { q: "Did GTA 6 leak before launch?", a: "Some clips spread, but the viral 'leaks' before launch were mostly fakes." },
     ],
   },
   "leaked-108-artist-list": {
-    question: "Who's on the GTA 6 soundtrack?",
+    question: "How many songs are on the GTA 6 radio?",
     body: [
-      "Rockstar's official soundtrack album, Grand Theft Auto VI: The Album, has 34 songs from artists including Travis Scott, Future, Metro Boomin and Morgan Wallen. A tracklist from an advance vinyl copy also lists names like Dua Lipa, Lana Del Rey and Playboi Carti.",
-      "The '108 artists' list that started circulating on November 14 claims to show the wider in-game radio lineup. It isn't confirmed, and fans quickly pointed out it's missing artists who are already on the official album, so even if parts are real, it isn't complete.",
-      "GTA games usually feature far more music on the in-game radio than on any album, so a list longer than 34 is plausible. The full lineup will be clear once players can tune through every station on November 19.",
+      "Far more than 108 artists' worth. GTA 6's in-game radio has more than 20 stations, and music sites cataloguing them count hundreds of licensed tracks.",
+      "Station counts differ between guides, from 21 to 24, depending on whether talk and special stations are included. Stations include Flash FM, Emotion 98.3, VCRR and Leonida Jazz Radio.",
+      "The separate official album, Grand Theft Auto VI: The Album, has 34 songs. The 108-artist list that spread before launch was only a fraction of the full lineup.",
     ],
     faq: [
-      { q: "How many songs are on the GTA 6 album?", a: "34, according to Rockstar's official album and the vinyl tracklist." },
-      { q: "Is Playboi Carti on the GTA 6 soundtrack?", a: "He's listed on the album's leaked vinyl tracklist. The in-game radio lineup isn't confirmed yet." },
+      { q: "How many radio stations are in GTA 6?", a: "More than 20. Guides count 21 to 24 depending on what they include." },
+      { q: "Is there a GTA 6 soundtrack album?", a: "Yes, Grand Theft Auto VI: The Album, with 34 songs." },
+    ],
+  },
+
+  // ---------------- Post-launch ----------------
+  "gta-6-has-cheat-codes": {
+    question: "Does GTA 6 have cheats?",
+    body: [
+      "Yes. GTA 6 has 61 cheats, but they work differently from past games. Each cheat unlocks after you finish the main story, by completing its own challenge. Finishing the story unlocks a money cheat, for example, and earning medals at shooting ranges unlocks infinite ammo.",
+      "Once unlocked, you enter cheats on the in-game phone with a button combination: open the phone, hold L1 or LB, press R1 or RB, then enter the combo. There are no phone-number cheats like GTA 4 and GTA 5 had.",
+      "Guides are still filling in the exact combos for every cheat, and some lists mark codes as unconfirmed. Be wary of lists that are really GTA 5 codes relabeled for GTA 6.",
+    ],
+    faq: [
+      { q: "How do you enter cheats in GTA 6?", a: "Open the phone, hold L1 (PS5) or LB (Xbox), press R1 or RB, then enter the cheat's button combo." },
+      { q: "Do GTA 6 cheats disable trophies?", a: "Not confirmed yet. Past GTAs disabled trophies and achievements while cheats were active." },
+    ],
+  },
+  "gta-6-crashed-psn": {
+    question: "Did GTA 6 crash PSN?",
+    body: [
+      "Nobody has said so officially. PlayStation Network sign-ins failed for many players on November 18, hours before GTA 6 unlocked in Europe and the US. Sony's status page confirmed the outage and showed services back to normal by mid-afternoon Eastern time.",
+      "The timing made GTA 6 the obvious suspect: millions of players were signing in, redeeming codes and downloading updates at once, and PS5 owners also needed a new system update to play. But Sony hasn't given a cause or tied the outage to the game.",
+      "The game itself didn't suffer a wide outage, since it has no online mode. If you have sign-in trouble, check PlayStation's status page first.",
+    ],
+    faq: [
+      { q: "Is PSN down?", a: "Check status.playstation.com. The November 18 outage was resolved the same day." },
+      { q: "Can you play GTA 6 offline?", a: "Yes. It's a single-player game, though PS5 owners needed to install a system update first." },
+    ],
+  },
+  "boxed-copies-missing-codes": {
+    question: "What if my GTA 6 box has no code?",
+    body: [
+      "Go back to the retailer. Some buyers have reported GTA 6 boxes with no download code inside, or a code that was already used. Because the boxed edition contains only a code, not a disc, a missing code means no game.",
+      "Neither Rockstar nor Sony has said how many boxes are affected or why. PlayStation's support guidance points buyers to the store where they bought the game.",
+      "Keep your receipt and the box. If a code shows as already used, don't keep retrying it.",
+    ],
+    faq: [
+      { q: "Does the GTA 6 box have a disc?", a: "No. Boxed copies contain a download code only." },
+      { q: "Can Rockstar replace a missing GTA 6 code?", a: "The advice so far is to contact the retailer, not Rockstar." },
     ],
   },
 
@@ -652,13 +690,13 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
   "bigfoot-in-the-grassrivers": {
     question: "Is there Bigfoot in GTA 6?",
     body: [
-      "Nothing official points to Bigfoot in GTA 6, at least not yet. That's why it's unverified.",
-      "Bigfoot hunting has a long history in the series. GTA San Andreas rumors kept players searching the forests for years, and GTA 5 finally included a Bigfoot hunt and a Bigfoot costume.",
-      "Leonida's swamps and forests, especially the Grassrivers and Mount Kalaga, are the obvious places to look. Search at night and in fog, and send us proof if you find anything.",
+      "Yes. Bigfoot is in GTA 6 as Leonida's Skunk Ape, Florida's own swamp-dwelling legend. Players have found an encounter in the Grassrivers, where a growl in the vegetation leads to a strange effigy tied to a tree.",
+      "There's also a side quest to hunt the creature, started from flyers around the swamp towns, with night-time searches by flashlight. Guides differ on the exact locations, so expect them to settle over the next few days.",
+      "It caps a 20-year running joke. GTA San Andreas players hunted a Bigfoot that never existed, and GTA 5 finally added one.",
     ],
     faq: [
-      { q: "Was Bigfoot in GTA San Andreas?", a: "No. It was a famous rumor, but Bigfoot was never in the game." },
-      { q: "Was Bigfoot in GTA 5?", a: "Yes, as part of a hunting mission and an online costume." },
+      { q: "Where is Bigfoot in GTA 6?", a: "In the Grassrivers swamps. Guides point to several spots, and a side quest leads you there." },
+      { q: "What is the Skunk Ape?", a: "Florida's version of Bigfoot, a legendary ape said to live in the Everglades." },
     ],
   },
 
@@ -668,7 +706,7 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     body: [
       "Yes. The Cortez Hotel is Vice City's version of the Colony Hotel at 736 Ocean Drive in Miami Beach. The vertical neon sign, the art deco facade and the Ocean Drive setting all match.",
       "The Colony is one of the most photographed buildings in South Beach, and its blue neon sign is best seen after dark from across the street.",
-      "We have a side-by-side comparison page for it and will add our own photo of the real hotel next to an in-game shot after launch.",
+      "We have a side-by-side comparison page for it and will add an in-game shot next to our own photo of the real hotel soon.",
     ],
     faq: [
       { q: "Where is the Colony Hotel?", a: "736 Ocean Drive, Miami Beach, Florida." },
@@ -680,7 +718,7 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     body: [
       "Fans have matched Vice City's tall beach towers to the Green and Blue Diamond condos on Collins Avenue in Miami Beach, known for their pointed, color-lit crowns.",
       "The towers haven't clearly appeared in official footage yet, so we're keeping this open. We already have our own photo of the real towers on the comparison page.",
-      "At launch, drive Collins Avenue in-game at night and look for two towers with pointed crowns. If you find them, send us a screenshot.",
+      "Drive Collins Avenue in-game at night and look for two towers with pointed crowns. If you find them, send us a screenshot.",
     ],
     faq: [
       { q: "Where are the Green and Blue Diamond condos?", a: "On Collins Avenue in Miami Beach." },

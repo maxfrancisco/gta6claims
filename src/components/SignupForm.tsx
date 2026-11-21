@@ -21,7 +21,7 @@ export default function SignupForm() {
     setState({ kind: "saving" });
     const { error } = await supabase.from("subscribers").insert({ email, source: "home" });
     if (!error || error.code === "23505") {
-      setState({ kind: "done", msg: "You're on the list. First verdicts land on launch day." });
+      setState({ kind: "done", msg: "You're on the list. We'll email you when big verdicts change." });
     } else {
       setState({ kind: "error", msg: "That didn't go through. Check the email address and try again." });
     }
@@ -39,13 +39,13 @@ export default function SignupForm() {
           <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
         </div>
         <button className="btn" type="submit" disabled={state.kind === "saving"}>
-          {state.kind === "saving" ? "Adding you…" : "Get launch-day verdicts"}
+          {state.kind === "saving" ? "Adding you…" : "Get verdict updates"}
         </button>
       </form>
       {state.kind === "error" ? (
         <p className="status-err" role="alert">{state.msg}</p>
       ) : (
-        <p className="field-note">One email when the launch-day verdicts go up. No spam. <Link href="/privacy/">Privacy</Link></p>
+        <p className="field-note">Only when big verdicts change. No spam. <Link href="/privacy/">Privacy</Link></p>
       )}
     </>
   );

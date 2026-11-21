@@ -125,8 +125,8 @@ export default function StatusPage() {
             </table>
           </div>
           <p className="hint">
-            &ldquo;Official&rdquo; means Rockstar said it. &ldquo;Estimate&rdquo; means analysts expect it. We&apos;ll replace estimates with tested numbers after launch.
-            More: <Link href="/claims/gta-6-runs-at-60-fps/">Does it run at 60 fps?</Link> · <Link href="/claims/gta-6-downgraded-on-xbox/">Is Xbox downgraded?</Link>
+            &ldquo;Tested&rdquo; means measured by Digital Foundry, as reported by other outlets. &ldquo;Official&rdquo; means Rockstar said it. We&apos;ll update these as patches change performance.
+            More: <Link href="/claims/gta-6-runs-at-60-fps/">Does it run at 60 fps?</Link> · <Link href="/claims/gta-6-downgraded-on-xbox/">Is Xbox downgraded?</Link> · <Link href="/claims/gta-6-looks-best-on-ps5-pro/">Best console</Link>
           </p>
         </div>
       </section>
@@ -137,7 +137,7 @@ export default function StatusPage() {
           <ol className="timeline">
             {TIMELINE.map((t) => (
               <li key={t.label} className={t.done ? "done" : ""}>
-                <span className="t-date">{day(t.date)}</span>
+                <span className="t-date">{t.dateLabel ?? day(t.date)}</span>
                 <strong>{t.label}</strong>
                 <span>{t.detail}</span>
               </li>
@@ -147,6 +147,7 @@ export default function StatusPage() {
             Related: <Link href="/claims/preload-starts-november-10/">How to pre-load</Link> ·{" "}
             <Link href="/claims/gta-6-unlocks-at-midnight-local-time/">What time it unlocks</Link> ·{" "}
             <Link href="/claims/gta-6-has-a-day-one-patch/">Day one patch</Link> ·{" "}
+            <Link href="/claims/gta-6-crashed-psn/">Did GTA 6 crash PSN?</Link> ·{" "}
             <Link href="/claims/gta-online-launches-same-day/">When GTA 6 Online comes out</Link>
           </p>
         </div>

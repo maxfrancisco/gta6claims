@@ -30,7 +30,7 @@ export default function Home() {
             <h1>Every GTA 6 claim, checked.</h1>
             <p className="lede">
               Rumors, leaks and &ldquo;you can do this&rdquo; claims, stamped Confirmed, Busted or Unverified, with
-              the sources to back it. On November 19 we start testing the rest in the game.
+              the sources to back it. GTA 6 is out, and we&apos;re testing the rest in the game.
             </p>
             <p className="tally">
               <span><strong>{counts.CONFIRMED}</strong> confirmed</span>

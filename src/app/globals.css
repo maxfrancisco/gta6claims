@@ -403,6 +403,7 @@ main { flex: 1; }
 .basis-official { background: var(--confirmed); color: var(--white); }
 .basis-mixed { background: var(--sky); color: var(--asphalt); }
 .basis-estimate { background: #fff3c4; color: #6b4a00; }
+.basis-tested { background: var(--asphalt); color: var(--white); }
 .timeline { list-style: none; padding: 0; margin: 0 0 1rem; border-left: 3px solid var(--asphalt); }
 .timeline li { position: relative; padding: 0 0 1.1rem 1.25rem; display: flex; flex-direction: column; max-width: var(--measure); }
 .timeline li::before { content: ""; position: absolute; left: -0.55rem; top: 0.3rem; width: 0.8rem; height: 0.8rem; border-radius: 50%; background: var(--white); border: 3px solid var(--asphalt); }

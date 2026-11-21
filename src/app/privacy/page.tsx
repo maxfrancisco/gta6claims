@@ -15,7 +15,7 @@ export default function PrivacyPage() {
     <section className="section legal">
       <div className="wrap">
         <h1>Privacy</h1>
-        <p className="hint">Last updated November 13, 2026</p>
+        <p className="hint">Last updated November 21, 2026</p>
         <p>
           GTA 6 Claims collects as little as it can, and we don&apos;t sell your
           information. The site is paid for by ads from Google, which use cookies as described
@@ -25,8 +25,8 @@ export default function PrivacyPage() {
         <h2>What we collect</h2>
         <ul>
           <li>
-            <strong>Your email, if you sign up.</strong> We use it only to tell you when new
-            comparisons go up.
+            <strong>Your email, if you sign up.</strong> We use it only to tell you when big
+            verdicts change.
           </li>
           <li>
             <strong>What you send through <Link href="/submit/">Submit a claim</Link>.</strong> That

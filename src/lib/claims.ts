@@ -4,7 +4,7 @@
 // Verdicts:
 //   CONFIRMED   Rockstar or Take-Two said it, or it is plainly shown in official footage.
 //   BUSTED      Official information contradicts it.
-//   UNVERIFIED  Not confirmed or ruled out yet. These are the ones we test on launch day.
+//   UNVERIFIED  Not confirmed or ruled out yet. These are the ones we test in the game.
 //
 // To change a verdict: edit `verdict`, rewrite `verdictText`, add a source, bump `updated`.
 
@@ -24,7 +24,7 @@ export type Claim = {
   verdict: Verdict;
   /** One or two sentences: what's true and how we know. */
   verdictText: string;
-  /** What players should check on launch day (UNVERIFIED claims). */
+  /** What players can check in the game to settle it (UNVERIFIED claims). */
   howToTest?: string;
   sources: Source[];
   /** ISO date this verdict was last checked. */
@@ -44,7 +44,7 @@ export const VERDICT_LABEL: Record<Verdict, string> = {
 export const VERDICT_BLURB: Record<Verdict, string> = {
   CONFIRMED: "Rockstar or Take-Two said it, or it's plainly shown in official footage.",
   BUSTED: "Official information contradicts it.",
-  UNVERIFIED: "Not confirmed or ruled out yet. We test these on launch day.",
+  UNVERIFIED: "Not confirmed or ruled out yet. We're testing these in the game.",
 };
 
 export const CATEGORIES: Category[] = ["Release", "Gameplay", "World", "Leaks", "Easter eggs", "Real world"];
@@ -52,6 +52,7 @@ export const CATEGORIES: Category[] = ["Release", "Gameplay", "World", "Leaks", 
 const D = "2026-11-12";
 const N = "2026-11-13";
 const L = "2026-11-15";
+const P = "2026-11-21";
 
 export const CLAIMS: Claim[] = [
   // ---------- Release ----------
@@ -68,7 +69,6 @@ export const CLAIMS: Claim[] = [
       { label: "Tullahoma News: GTA 6 nears worldwide release", url: "https://www.tullahomanews.com/arts-entertainment/2026/11/12/gta-6-nears-worldwide-release/" },
     ],
     updated: D,
-    trending: true,
   },
   {
     slug: "gta-6-was-delayed-twice",
@@ -211,15 +211,14 @@ export const CLAIMS: Claim[] = [
     claim: "A new GTA Online launches the same day as GTA 6.",
     short: "New GTA Online launches on day one",
     category: "Release",
-    verdict: "UNVERIFIED",
-    verdictText:
-      "Rockstar is marketing GTA 6 as a single-player game and hasn't announced an online mode or a date for one. Dataminers claim to have found multiplayer code.",
-    howToTest: "Check the main menu on November 19 for an online option.",
+    verdict: "BUSTED",
+    verdictText: "GTA 6 launched on November 19 as a single-player game with no online mode. Rockstar still hasn't announced one, and reports point to 2027.",
     sources: [
+      { label: "PC Gamer: When might GTA 6's multiplayer launch?", url: "https://www.pcgamer.com/games/grand-theft-auto/gta-6-online-multiplayer/" },
+      { label: "Vice: GTA 6 PC and Online release dates explained", url: "https://www.vice.com/en/article/gta-6-pc-online-release-date/" },
       { label: "MP1st: GTA 6 marketed as single-player", url: "https://mp1st.com/news/rockstar-wont-talk-about-gta-6-online-game-marketed-as-single-player-experience" },
-      { label: "Outlook Respawn: Online plans still under wraps", url: "https://respawn.outlookindia.com/gaming/gaming-news/gta-6-online-plans-remain-under-wraps-ahead-of-november-release" },
     ],
-    updated: L,
+    updated: P,
     trending: true,
   },
   {
@@ -310,53 +309,52 @@ export const CLAIMS: Claim[] = [
     claim: "The GTA 6 story takes 80 hours.",
     short: "The story takes 80 hours",
     category: "Gameplay",
-    verdict: "UNVERIFIED",
-    verdictText:
-      "This comes from one Rockstar North director's playthrough of the story plus some side content. It isn't an official length.",
-    howToTest: "We'll track real completion times from players after launch.",
+    verdict: "BUSTED",
+    verdictText: "The main story takes most reviewers around 50 to 60 hours. 80 hours is closer to the story plus a good amount of side content.",
     sources: [
-      { label: "TechSpot: 80-hour story, bigger map", url: "https://www.techspot.com/news/113647-gta-6-80-hour-story-3x-bigger-map.html" },
-      { label: "Stevivor: How long is GTA 6?", url: "https://stevivor.com/guides/how-long-is-gta-6/" },
+      { label: "Screen Rant: How long GTA 6's main story takes", url: "https://screenrant.com/gta-6-main-story-length-completion/" },
+      { label: "Nacionale: Critics finished the story in 50 to 70 hours", url: "https://www.nacionale.com/en/articles/how-long-is-gta-6-to-beat-story-hours-reviews-100-percent-platinum" },
     ],
-    updated: D,
+    updated: P,
   },
   {
     slug: "gyms-make-you-stronger",
     claim: "Working out at the gym makes your character visibly stronger.",
     short: "The gym makes you visibly stronger",
     category: "Gameplay",
-    verdict: "UNVERIFIED",
-    verdictText: "Gyms appear in the Extended Look. Whether workouts change your body or stats hasn't been shown.",
-    howToTest: "Train at a gym for a few in-game days and compare screenshots.",
+    verdict: "CONFIRMED",
+    verdictText: "Yes. Working out at Vice City's gyms builds muscle and strength, and food and exercise visibly change Jason's and Lucia's bodies.",
     sources: [
-      { label: "Notebookcheck: Extended reveal shows gyms", url: "https://www.notebookcheck.net/GTA-6-extended-gameplay-reveal-shows-off-new-combat-carjacking-gyms-and-much-more.1381015.0.html" },
+      { label: "PowerPyx: All gym locations", url: "https://www.powerpyx.com/gta-6-all-gym-locations-fitness-centers/" },
+      { label: "G2A News: GTA 6 fitness guide", url: "https://www.g2a.com/news/gta-6-news/gta-6-fitness-guide/" },
     ],
-    updated: D,
+    updated: P,
   },
   {
     slug: "you-can-buy-houses",
     claim: "You can buy houses and other property.",
     short: "You can buy houses",
     category: "Gameplay",
-    verdict: "UNVERIFIED",
-    verdictText: "Rockstar hasn't shown buying property in GTA 6. GTA 5 let you buy businesses and garages, so it's plausible.",
-    howToTest: "Look for for-sale signs and a property website on the in-game phone.",
-    sources: [],
-    updated: D,
+    verdict: "BUSTED",
+    verdictText: "Not so far. Players have found garages to buy, but no houses or businesses. Safehouses come with the story.",
+    sources: [
+      { label: "Output Lag: Businesses and property", url: "https://outputlag.com/guides/gta-6-businesses-property/" },
+      { label: "GTA Bites: Garages, safehouses and businesses", url: "https://www.gtabites.com/properties" },
+    ],
+    updated: P,
   },
   {
     slug: "enter-every-building",
     claim: "You can go inside every building in Vice City.",
     short: "You can enter every building",
     category: "World",
-    verdict: "UNVERIFIED",
-    verdictText:
-      "Rockstar has shown more interiors than ever, but has never said every building can be entered. Every past GTA had locked doors.",
-    howToTest: "Walk a block of Ocean Drive and count the doors that open.",
+    verdict: "BUSTED",
+    verdictText: "Not every one. There are hundreds of interiors, far more than GTA 5, from shops and bars to gyms and banks, but plenty of doors stay locked.",
     sources: [
-      { label: "80.lv: Detailed look at Vice City", url: "https://80.lv/articles/gta-6-gameplay-reveal-shows-a-shockingly-detailed-look-at-vice-city" },
+      { label: "MP1st: GTA 6 features hundreds of interiors", url: "https://mp1st.com/news/gta-6-feature-hundreds-interior-spaces-players-can-enter-story-closer-rdr2-than-gta5" },
+      { label: "SlashGear: Way more enterable buildings than GTA 5", url: "https://www.slashgear.com/2321396/gta-6-can-enter-more-buildings-than-gta-5/" },
     ],
-    updated: D,
+    updated: P,
     trending: true,
   },
 
@@ -432,14 +430,13 @@ export const CLAIMS: Claim[] = [
     claim: "Bigfoot is hidden somewhere in Leonida.",
     short: "Bigfoot is hidden in Leonida",
     category: "Easter eggs",
-    verdict: "UNVERIFIED",
-    verdictText:
-      "Bigfoot hunts ran for years in GTA San Andreas and GTA 5. Nothing official points to one in GTA 6. Yet.",
-    howToTest: "Search the swamps and forests at night and in fog. Send us proof.",
+    verdict: "CONFIRMED",
+    verdictText: "Bigfoot is in the game as Leonida's Skunk Ape. Players have found an encounter in the Grassrivers swamps and a side quest to hunt it.",
     sources: [
-      { label: "GTA 6 Times: Leak and rumor tracker", url: "https://gta6times.com/gta-6/leaks" },
+      { label: "GTABase: How to find the Skunk Ape", url: "https://www.gtabase.com/gta-6/articles/gta-6-bigfoot-location-how-to-find-the-skunk-ape" },
+      { label: "Output Lag: Bigfoot, UFOs and more easter eggs", url: "https://outputlag.com/guides/gta-6-easter-eggs/" },
     ],
-    updated: D,
+    updated: P,
     trending: true,
   },
 
@@ -507,7 +504,6 @@ export const CLAIMS: Claim[] = [
       { label: "Push Square: GTA 6 release times", url: "https://www.pushsquare.com/guides/gta-6-release-times-when-can-you-start-playing" },
     ],
     updated: L,
-    trending: true,
   },
   {
     slug: "gta-6-got-delayed-again",
@@ -522,20 +518,20 @@ export const CLAIMS: Claim[] = [
       { label: "TweakTown: Rockstar delays GTA 6 to November 19, 2026", url: "https://www.tweaktown.com/news/108727/rockstar-officially-delays-gta-6-again-will-now-release-on-november-19-2026/index.html" },
     ],
     updated: N,
-    trending: true,
   },
   {
     slug: "gta-6-is-already-out",
     claim: "GTA 6 is already out.",
     short: "GTA 6 is already out",
     category: "Release",
-    verdict: "BUSTED",
-    verdictText:
-      "Not yet. You can pre-order and pre-load it, but it doesn't unlock until midnight local time on November 19, 2026.",
+    verdict: "CONFIRMED",
+    verdictText: "GTA 6 came out on November 19, 2026, on PS5 and Xbox Series X|S, unlocking at midnight local time. Take-Two says it was the biggest entertainment launch ever.",
     sources: [
-      { label: "Forbes: GTA 6 unlocks at midnight on November 19", url: "https://www.forbes.com/sites/brianmazique/2026/11/12/gta-6-unlocks-at-midnight-on-november-19-but-millions-of-americans-can-start-playing-the-night-before/" },
+      { label: "ABC News: GTA 6 breaks first-day sales records", url: "https://abcnews.com/GMA/Culture/grand-theft-auto-vi-breaks-1st-day-sales-record/story?id=138328412" },
+      { label: "Forbes: GTA 6 raked in $3.8 billion on its first day", url: "https://www.forbes.com/sites/antoniopequenoiv/2026/11/20/gta-6-raked-in-38-billion-sales-on-first-day-the-largest-entertainment-launch-ever/" },
     ],
-    updated: N,
+    updated: P,
+    trending: true,
   },
   {
     slug: "gta-6-needs-212-gb",
@@ -550,6 +546,7 @@ export const CLAIMS: Claim[] = [
       { label: "TechRadar: Pre-loads need 212 GB free", url: "https://techradar.com/gaming/gta-6-digital-pre-loads-for-ps5-and-xbox-will-begin-9-days-early-and-require-a-whopping-212gb-of-free-space" },
     ],
     updated: N,
+    trending: true,
   },
   {
     slug: "gta-6-runs-at-60-fps",
@@ -557,13 +554,12 @@ export const CLAIMS: Claim[] = [
     short: "GTA 6 runs at 60 fps on PS5 Pro",
     category: "Release",
     verdict: "BUSTED",
-    verdictText:
-      "Rockstar's target is 30 fps on every console, PS5 Pro included. The Pro gets visual upgrades instead, and no 60 fps mode has been announced.",
+    verdictText: "There's no 60 fps mode on any console, PS5 Pro included. Every version targets 30 fps, and the Pro gets sharper visuals instead.",
     sources: [
+      { label: "GTA Boom: Digital Foundry finds GTA 6 runs best on PS5 Pro", url: "https://www.gtaboom.com/digital-foundry-finds-that-gta-6-indeed-runs-best-on-ps5-pro-b72f" },
       { label: "Push Square: 30 fps target, PS5 Pro features", url: "https://www.pushsquare.com/news/2026/11/gta-6-ps5-pro-features-revealed-30fps-target-on-both-consoles" },
-      { label: "Notebookcheck: Console performance targets", url: "https://www.notebookcheck.net/Rockstar-reveals-GTA-6-console-performance-targets-and-PS5-Pro-upgrades.1447121.0.html" },
     ],
-    updated: N,
+    updated: P,
     trending: true,
   },
   {
@@ -572,13 +568,12 @@ export const CLAIMS: Claim[] = [
     short: "GTA 6 looks best on PS5 Pro",
     category: "Release",
     verdict: "CONFIRMED",
-    verdictText:
-      "Rockstar announced PS5 Pro-only extras: ray-traced shadows and sharper image quality from Sony's PSSR upscaling. Frame rate is the same 30 fps target as other consoles.",
+    verdictText: "Digital Foundry's testing backs it up: the PS5 Pro is the sharpest version and holds closest to a steady 30 fps, with ray-traced shadows the other consoles don't get.",
     sources: [
+      { label: "GTA Boom: Digital Foundry finds GTA 6 runs best on PS5 Pro", url: "https://www.gtaboom.com/digital-foundry-finds-that-gta-6-indeed-runs-best-on-ps5-pro-b72f" },
       { label: "Push Square: PS5 Pro features revealed", url: "https://www.pushsquare.com/news/2026/11/gta-6-ps5-pro-features-revealed-30fps-target-on-both-consoles" },
-      { label: "Notebookcheck: PS5 Pro upgrades", url: "https://www.notebookcheck.net/Rockstar-reveals-GTA-6-console-performance-targets-and-PS5-Pro-upgrades.1447121.0.html" },
     ],
-    updated: N,
+    updated: P,
   },
   {
     slug: "ultimate-edition-has-extra-story",
@@ -627,75 +622,67 @@ export const CLAIMS: Claim[] = [
     claim: "GTA 6 has crossplay between PS5 and Xbox.",
     short: "GTA 6 has PS5–Xbox crossplay",
     category: "Release",
-    verdict: "UNVERIFIED",
-    verdictText:
-      "Rockstar hasn't announced crossplay, and hasn't announced an online mode for it to apply to. GTA Online never allowed PlayStation and Xbox players together.",
-    howToTest: "If an online mode appears, check whether you can invite friends on the other console.",
+    verdict: "BUSTED",
+    verdictText: "There's no crossplay because there's no multiplayer. GTA 6 launched as a single-player game, and Rockstar hasn't announced an online mode yet.",
     sources: [
+      { label: "PC Gamer: When might GTA 6's multiplayer launch?", url: "https://www.pcgamer.com/games/grand-theft-auto/gta-6-online-multiplayer/" },
       { label: "dlcompare: Crossplay and cross-progression explained", url: "https://www.dlcompare.com/gaming-news/is-gta-6-cross-platform-crossplay-and-cross-progression-explained" },
-      { label: "GTA Intel: Will GTA 6 have crossplay?", url: "https://gtaintel.com/news/gta-6-is-it-cross-platform-crossplay" },
     ],
-    updated: N,
+    updated: P,
   },
   {
     slug: "rockstar-released-the-full-map",
     claim: "Rockstar has released the full GTA 6 map.",
     short: "Rockstar released the full map",
     category: "World",
-    verdict: "BUSTED",
-    verdictText:
-      "Rockstar hasn't published a full map. The detailed maps online come from fan mapping projects built frame by frame from trailers.",
+    verdict: "CONFIRMED",
+    verdictText: "It's in the game now. The full map of Leonida shipped with GTA 6 on November 19. Before launch, the detailed maps online were fan-made.",
     sources: [
-      { label: "T3: The fan-made 'Google Maps' of GTA 6", url: "https://www.t3.com/tech/gaming/the-google-maps-of-gta-6-fan-project-lets-you-see-around-the-huge-open-world-location-in-grand-theft-auto-vi" },
+      { label: "Stevivor: The full GTA 6 map size breakdown", url: "https://stevivor.com/guides/gta-6-map/" },
       { label: "Gfinity: The GTA 6 mapping project", url: "https://www.gfinityesports.com/article/this-gta-6-mapping-project-might-be-the-internets-best-detective-work-yet" },
     ],
-    updated: N,
-    trending: true,
+    updated: P,
   },
   {
     slug: "reviews-come-out-november-18",
     claim: "GTA 6 reviews come out on November 18.",
     short: "GTA 6 reviews drop November 18",
     category: "Release",
-    verdict: "UNVERIFIED",
-    verdictText:
-      "Insider Gaming reports the review embargo lifts November 18, a day before launch, like GTA 5 and Red Dead Redemption 2. Rockstar hasn't announced it.",
-    howToTest: "Check Metacritic and OpenCritic on the morning of November 18.",
+    verdict: "CONFIRMED",
+    verdictText: "Reviews went live on the morning of November 18, the day before launch, and pushed GTA 6 to a 99 on Metacritic.",
     sources: [
+      { label: "CP24: The reviews are in", url: "https://www.cp24.com/news/entertainment/2026/11/19/was-grand-theft-auto-vi-worth-the-13-year-wait-the-reviews-are-in/" },
+      { label: "Digital Trends: GTA 6 opens to roaring critical acclaim", url: "https://digitaltrends.com/gaming/gta-6-opens-to-roaring-critical-acclaim-matching-zeldas-historic-score" },
       { label: "Insider Gaming: GTA 6 review embargo", url: "https://insider-gaming.com/grand-theft-auto-6-review-embargo/" },
-      { label: "Beebom: Review embargo date", url: "https://beebom.com/gta-6-review-embargo-date-revealed/" },
     ],
-    updated: N,
+    updated: P,
   },
   {
     slug: "pre-orders-made-1-billion",
     claim: "GTA 6 made $1 billion from pre-orders.",
     short: "GTA 6 made $1 billion from pre-orders",
     category: "Release",
-    verdict: "UNVERIFIED",
-    verdictText:
-      "Analyst estimates put pre-order revenue between about $750 million and $1.09 billion. Take-Two hasn't published a number, only that pre-orders are at unprecedented levels.",
-    howToTest: "Take-Two is expected to share first sales figures after launch.",
+    verdict: "CONFIRMED",
+    verdictText: "Easily. Take-Two says GTA 6 sold 32.5 million copies before launch and $3.79 billion in retail sales on day one, the biggest entertainment launch ever.",
     sources: [
-      { label: "Benzinga: Pre-orders hit $751 million (estimate)", url: "https://www.benzinga.com/trading-ideas/long-ideas/26/11/62942816/gta-6-preorder-sales-hit-751-million-2-weeks-ahead-of-release-are-investors-ignoring-take-two-stock-opportunity" },
-      { label: "Motley Fool: GTA VI is days away", url: "https://www.fool.com/investing/2026/11/11/gta-vi-days-away-don-t-expect-gta-v-style-returns-from-take-two-stock-at-5-7-times-sales/" },
+      { label: "Take-Two: GTA VI shatters entertainment box office records", url: "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records" },
+      { label: "ABC News: GTA 6 breaks first-day sales records", url: "https://abcnews.com/GMA/Culture/grand-theft-auto-vi-breaks-1st-day-sales-record/story?id=138328412" },
     ],
-    updated: N,
+    updated: P,
   },
   {
     slug: "manni-perez-plays-lucia",
     claim: "Manni L. Perez plays Lucia in GTA 6.",
     short: "Manni L. Perez plays Lucia",
     category: "Gameplay",
-    verdict: "UNVERIFIED",
-    verdictText:
-      "She's the name fans most often link to Lucia, based on her look and voice in the trailers. Neither Rockstar nor the actress has confirmed it.",
-    howToTest: "Check the credits after launch.",
+    verdict: "CONFIRMED",
+    verdictText: "The game's credits name Manni L. Perez as Lucia Caminos. Jason Duval is played by Dylan Rourke.",
     sources: [
-      { label: "PCGamesN: GTA 6 voice actors and cast rumors", url: "https://www.pcgamesn.com/grand-theft-auto-6/voice-actors" },
-      { label: "Red Bull: Lucia explained", url: "https://www.redbull.com/int-en/gta-6-lucia-caminos" },
+      { label: "Screen Rant: GTA 6 full cast and voice list", url: "https://screenrant.com/gta-6-cast-voice-actors/" },
+      { label: "Nacionale: Credits name Dylan Rourke and Manni L. Perez", url: "https://www.nacionale.com/en/articles/gta-6-voice-actors-who-plays-lucia-jason-manni-l-perez-dylan-rourke-stephen-root" },
     ],
-    updated: N,
+    updated: P,
+    trending: true,
   },
 
   // ---------- Leaks: added November 15, 2026 ----------
@@ -738,32 +725,27 @@ export const CLAIMS: Claim[] = [
     claim: "Rockstar and PlayStation are tightly locking down GTA 6 review copies.",
     short: "Review copies are under tight lockdown",
     category: "Leaks",
-    verdict: "UNVERIFIED",
-    verdictText:
-      "Reports conflict. Some said reviewers would play only at secure locations, later ones said watermarked copies were sent out. Rockstar hasn't confirmed either.",
-    howToTest: "Read how reviewers describe their access when reviews go up, reportedly on November 18.",
+    verdict: "BUSTED",
+    verdictText: "Reviewers got the game and more than 150 reviews went up on November 18. The flashing-watermark story was disputed by the leaker it was pinned on.",
     sources: [
-      { label: "Reddit r/GamingLeaksAndRumours: Commenters doubt the source", url: "https://www.reddit.com/r/GamingLeaksAndRumours/comments/1xwj3on/comment/19snhwf16b944/" },
-      { label: "Digital Citizen: Review copies may be locked down", url: "https://www.digitalcitizen.life/gta-6-review-copies-may-be-locked-down-to-stop-early-leaks/" },
-      { label: "TweakTown: Insider claims no review copies", url: "https://www.tweaktown.com/news/111646/rockstar-games-will-not-send-gta-6-review-copies-to-journalists-and-media-claims-insider/index.html" },
+      { label: "CP24: The reviews are in", url: "https://www.cp24.com/news/entertainment/2026/11/19/was-grand-theft-auto-vi-worth-the-13-year-wait-the-reviews-are-in/" },
+      { label: "Pro Gamer: Flashing watermark rumor debunked", url: "https://pro-gamer.gg/gta-6-review-copies-flashing-watermark-rumor-debunked-security-november-18/" },
     ],
-    updated: L,
+    updated: P,
   },
   {
     slug: "leaked-108-artist-list",
     claim: "A leaked list shows all 108 artists on the GTA 6 soundtrack.",
     short: "Leaked list shows 108 soundtrack artists",
     category: "Leaks",
-    verdict: "UNVERIFIED",
-    verdictText:
-      "The list isn't confirmed, and fans note it misses artists already on Rockstar's official 34-track album. The full in-game radio lineup will be clear at launch.",
-    howToTest: "Flip through the in-game radio stations after launch.",
+    verdict: "BUSTED",
+    verdictText: "Far from complete. The in-game radio has more than 20 stations and hundreds of licensed tracks, well beyond 108 artists.",
     sources: [
+      { label: "PC Gamer: Every GTA 6 song and radio station", url: "https://www.pcgamer.com/games/grand-theft-auto/gta-6-radio-songs/" },
+      { label: "Consequence: GTA 6 radio stations and full song list", url: "https://consequence.net/2026/11/gta-6-radio-stations-songs-soundtrack/" },
       { label: "Reddit r/JuiceWRLD: 'This ain't the full list'", url: "https://www.reddit.com/r/JuiceWRLD/comments/1xw6toi/comment/19sms1p6mt0wy/" },
-      { label: "Billboard: GTA 6 album tracklist", url: "https://www.billboard.com/music/music-news/gta-6-album-tracklist-grand-theft-auto-vi-soundtrack-1236382244/" },
-      { label: "Keengamer: Full album tracklist leaks", url: "https://www.keengamer.com/articles/news/gta-6-full-album-tracklist-leaks-revealing-all-34-songs-and-artists/" },
     ],
-    updated: L,
+    updated: P,
   },
 
   // ---------- Launch week: added November 15, 2026 from Google Trends ----------
@@ -780,7 +762,6 @@ export const CLAIMS: Claim[] = [
       { label: "Rockstar Support: Regional pre-load and release times", url: "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s" },
     ],
     updated: L,
-    trending: true,
   },
   {
     slug: "preload-starts-november-10",
@@ -795,7 +776,6 @@ export const CLAIMS: Claim[] = [
       { label: "Keengamer: Preload date and release times guide", url: "https://www.keengamer.com/articles/guides/gta-6-preload-date-and-global-release-times-guide/" },
     ],
     updated: L,
-    trending: true,
   },
   {
     slug: "gta-6-has-a-day-one-patch",
@@ -803,30 +783,25 @@ export const CLAIMS: Claim[] = [
     short: "GTA 6 already has a pre-launch patch",
     category: "Release",
     verdict: "CONFIRMED",
-    verdictText:
-      "Update 1.002 is rolling out: about 1.07 GB on PS5 and about 2.18 GB on Xbox. Rockstar hasn't published patch notes or called it the day-one patch.",
+    verdictText: "Two updates landed before launch: 1.002 on November 13 and 1.002.001 on November 16. Rockstar hasn't published patch notes for either.",
     sources: [
-      { label: "Vice: GTA 6 day one patch is already rolling out on PS5", url: "https://www.vice.com/en/article/gta-6-day-one-patch-ps5-version-1002/" },
-      { label: "Keengamer: Update 1.002 rolls out on PS5 and Xbox", url: "https://www.keengamer.com/articles/news/gta-6-update-1-002-starts-rolling-out-on-ps5-and-xbox-ahead-of-launch/" },
+      { label: "dlcompare: Two silent updates and a PSN outage", url: "https://www.dlcompare.com/gaming-news/gta-6-day-one-patch-two-silent-updates-and-a-psn-outage" },
+      { label: "Vice: GTA 6 day one patch is already rolling out", url: "https://www.vice.com/en/article/gta-6-day-one-patch-ps5-version-1002/" },
     ],
-    updated: L,
-    trending: true,
+    updated: P,
   },
   {
     slug: "gta-6-downgraded-on-xbox",
-    claim: "GTA 6 is downgraded on Xbox.",
-    short: "GTA 6 is downgraded on Xbox",
+    claim: "GTA 6 is downgraded on Xbox Series S.",
+    short: "GTA 6 is downgraded on Xbox Series S",
     category: "Release",
-    verdict: "UNVERIFIED",
-    verdictText:
-      "Analysts expect the Xbox Series S to run at a much lower resolution, somewhere between 720p and 1080p. Series X should be close to PS5. Rockstar hasn't published resolutions for any console.",
-    howToTest: "Compare Series S, Series X and PS5 footage once the game is out, or wait for Digital Foundry's analysis.",
+    verdict: "CONFIRMED",
+    verdictText: "On Series S, yes: it renders at 720p, upscaled to 1080p, and often runs in the 20s. Series X matches PS5 at 1440p and runs a little smoother.",
     sources: [
-      { label: "GTA Boom: Digital Foundry's outlook for Xbox Series S", url: "https://www.gtaboom.com/digital-foundry-explains-why-gta-6-could-look-dramatically-different-on-xbox-series-s-250a" },
-      { label: "ComicBook: Report warns of downgrade for Xbox", url: "https://comicbook.com/gaming/news/gta-6-grand-theft-auto-vi-xbox-series-x-downgrade/" },
-      { label: "Push Square: 30 fps target on every console", url: "https://www.pushsquare.com/news/2026/11/gta-6-ps5-pro-features-revealed-30fps-target-on-both-consoles" },
+      { label: "GTA Boom: Digital Foundry finds GTA 6 runs best on PS5 Pro", url: "https://www.gtaboom.com/digital-foundry-finds-that-gta-6-indeed-runs-best-on-ps5-pro-b72f" },
+      { label: "Windows Forum: PS5 Pro holds 30 fps, Series S struggles", url: "https://windowsforum.com/news/gta-6-console-performance-compared-ps5-pro-holds-30-fps-xbox-series-s-struggles.453173/" },
     ],
-    updated: L,
+    updated: P,
     trending: true,
   },
   {
@@ -857,6 +832,56 @@ export const CLAIMS: Claim[] = [
       { label: "mxdwn Games: Providers report record traffic", url: "https://games.mxdwn.com/news/gta-6-pre-loads-drive-record-internet-traffic-as-broadband-providers-report-surges/" },
     ],
     updated: L,
+  },
+
+  // ---------- Post-launch: added November 21, 2026 ----------
+  {
+    slug: "gta-6-has-cheat-codes",
+    claim: "GTA 6 has cheat codes.",
+    short: "GTA 6 has cheat codes",
+    category: "Gameplay",
+    verdict: "CONFIRMED",
+    verdictText:
+      "It does: 61 of them. But you unlock each one through challenges after finishing the story, then enter it as a button combo on the phone. There are no phone-number cheats like in GTA 5.",
+    sources: [
+      { label: "Red Bull: How to unlock all 61 GTA 6 cheats", url: "https://www.redbull.com/us-en/gta-6-cheat-codes" },
+      { label: "Insider Gaming: All GTA 6 cheats", url: "https://insider-gaming.com/all-gta-6-cheats-best-grand-theft-auto-6-cheat-codes/" },
+      { label: "Vice: All GTA 6 cheat codes for PS5 and Xbox", url: "https://www.vice.com/en/article/gta-6-cheat-codes-list/" },
+    ],
+    updated: P,
+    trending: true,
+  },
+  {
+    slug: "gta-6-crashed-psn",
+    claim: "GTA 6 crashed the PlayStation Network.",
+    short: "GTA 6 crashed the PlayStation Network",
+    category: "Release",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "PSN did go down for sign-ins on November 18, hours before launch, and Sony confirmed the outage. But Sony never gave a cause or linked it to GTA 6.",
+    howToTest: "Watch for a statement from Sony explaining the outage.",
+    sources: [
+      { label: "Tech Times: PSN sign-in outage preceded GTA 6 unlock", url: "https://www.techtimes.com/articles/331071/20261119/psn-sign-outage-preceded-gta-6-us-unlock-install-required-ps5-update-enable-offline-play.htm" },
+      { label: "VGTimes: PSN buckled under the GTA 6 launch rush", url: "https://vgtimes.com/gaming-news/175045-ps5-users-report-playstation-network-errors-as-gta-6-downloads-stall.html" },
+      { label: "Cybernews: PlayStation outage hits GTA 6 launch", url: "https://cybernews.com/tech/playstation-outage-gta-6-release/" },
+    ],
+    updated: P,
+    trending: true,
+  },
+  {
+    slug: "boxed-copies-missing-codes",
+    claim: "Some GTA 6 boxed copies came with missing or used codes.",
+    short: "Some boxed copies had bad codes",
+    category: "Release",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "Players have reported boxes with no code inside or a code that was already redeemed. Neither Rockstar nor Sony has said how widespread it is. The fix is to go back to the retailer.",
+    howToTest: "If it happens to you, contact the store you bought it from with your receipt.",
+    sources: [
+      { label: "EGamers: Launch problems tracked, including faulty box codes", url: "https://egamers.io/gta-6-launch-problems-tracked-ps5-sign-in-errors-faulty-box-codes-and-patch-status/" },
+      { label: "VGTimes: Players couldn't sign in or redeem codes", url: "https://vgtimes.com/gaming-news/175045-ps5-users-report-playstation-network-errors-as-gta-6-downloads-stall.html" },
+    ],
+    updated: P,
   },
 
 ];
