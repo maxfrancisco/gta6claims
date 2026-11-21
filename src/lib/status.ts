@@ -13,10 +13,10 @@ export const STATUS: {
   updated: string;
 } = {
   level: "ISSUES",
-  headline: "GTA 6 is out and running. Some boxed copies have bad codes.",
+  headline: "Some players report crashes that lost progress. No fix from Rockstar yet.",
   detail:
-    "There's no online mode, so there are no GTA 6 servers to go down. The PlayStation Network sign-in outage on November 18 was fixed the same day. Some buyers report boxed copies with missing or used codes, and the Xbox Series S version runs noticeably worse than other consoles.",
-  updated: "2026-11-21T12:00:00-05:00",
+    "There's no online mode, so there are no GTA 6 servers to go down. On day three, some PS5 and Xbox players report crashes that cost them hours of progress; Rockstar hasn't confirmed it or released a fix. Boxed copies with bad codes and weak Xbox Series S performance are still open, and the November 18 PSN outage is fixed.",
+  updated: "2026-11-21T18:00:00-05:00",
 };
 
 export const STATUS_LABEL: Record<StatusLevel, string> = {
@@ -96,6 +96,31 @@ export type Issue = {
 };
 
 export const ISSUES: Issue[] = [
+  {
+    id: "crash-lost-progress",
+    title: "Crashes that lose hours of progress",
+    platforms: "PS5, Xbox",
+    state: "INVESTIGATING",
+    detail:
+      "Some players report the game crashing and losing hours of progress. As of Saturday, Rockstar hasn't confirmed a save-wipe bug or released a fix. A viral post promising a big patch on November 25 isn't backed by any Rockstar statement.",
+    fix: "Save manually and often, especially before long missions, and keep the console updated. If a crash keeps repeating, report it to Rockstar Support.",
+    sources: [
+      { label: "Happy Gamer: Day 3 live updates", url: "https://happygamer.com/gta-6-day-3-live-updates-177471/" },
+      { label: "Futurism: Bizarre bugs in GTA VI", url: "https://futurism.com/future-society/gta-6-bugs" },
+    ],
+    updated: "2026-11-21",
+  },
+  {
+    id: "stash-bag",
+    title: "Stash bag disappears after getting in a car or a cutscene",
+    platforms: "PS5, Xbox",
+    state: "NOT_FIXED",
+    detail: "Players report their stash bag vanishing after entering a vehicle or sitting through a cutscene. No official patch yet.",
+    sources: [
+      { label: "GTA6BUGS", url: "https://gta6bugs.com/bugs/gta-6-stash-bag-vanished-car-or-cutscene" },
+    ],
+    updated: "2026-11-21",
+  },
   {
     id: "box-codes",
     title: "Boxed copy has no code, or the code is already used",

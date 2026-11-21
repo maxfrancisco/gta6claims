@@ -62,7 +62,7 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
   "gta-6-launches-on-pc": {
     question: "Is GTA 6 coming out on PC?",
     body: [
-      "No. GTA 6 launched only on PS5 and Xbox Series X|S, and Rockstar hasn't announced a PC version or given one a date. Take-Two has said that any PC news will come from Rockstar.",
+      "No. GTA 6 launched only on PS5 and Xbox Series X|S. Industry reports point to a PC release in early 2027, but Rockstar hasn't announced a PC version or given one a date. Take-Two has said that any PC news will come from Rockstar.",
       "A PC version is very likely eventually. Rockstar has brought every recent GTA and Red Dead game to PC, but always later. GTA 5 arrived on PC about a year and a half after its console release, and Red Dead Redemption 2 about a year after.",
       "Some reports point to 2027 for a PC release, but those come from anonymous sources, not from Rockstar.",
     ],
@@ -686,6 +686,42 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     ],
   },
 
+  "gta-6-has-first-person-mode": {
+    question: "Does GTA 6 have first person?",
+    body: [
+      "No. GTA 6 has no first-person mode. GTA 5 added one in its 2014 re-release, so many players expected it, but Rockstar North's Rob Nelson has said the studio prioritized third-person animation for GTA 6.",
+      "Players have found a glitch that gives a first-person view: get in a vehicle, open the phone, and press buttons rapidly. It's a camera trick, not a supported mode, and it could stop working in a future patch.",
+      "Rockstar hasn't said whether a proper first-person mode could come later.",
+    ],
+    faq: [
+      { q: "How do you get first person in GTA 6?", a: "Only through a glitch: in a vehicle, open the phone and rapidly press buttons. There's no setting for it." },
+      { q: "Will GTA 6 add first person later?", a: "Rockstar hasn't said." },
+    ],
+  },
+  "big-patch-november-25": {
+    question: "When is the next GTA 6 patch?",
+    body: [
+      "Rockstar hasn't announced one. A viral post claims Rockstar promised a big update on November 25, but no Rockstar statement backs it up, and the post now carries a community note saying so.",
+      "So far GTA 6 has had two updates, 1.002 and 1.002.001, both before launch and both without patch notes. With players reporting crashes and bugs, a fix-focused update is likely soon, but the date is unknown.",
+      "We list every update, its size and any notes on our status page the moment it lands.",
+    ],
+    faq: [
+      { q: "Is there a GTA 6 patch today?", a: "Check our status page. We log every update as it rolls out." },
+      { q: "Where does Rockstar post GTA 6 patch notes?", a: "On Rockstar Support and Newswire, though none have been published for the updates so far." },
+    ],
+  },
+  "crashes-wipe-saves": {
+    question: "Is GTA 6 deleting saves?",
+    body: [
+      "Some players say so. On launch weekend, PS5 and Xbox players reported crashes that cost them hours of progress. Rockstar hasn't confirmed a save-wipe bug, said how many players are affected, or released a fix.",
+      "Until there's a patch, save manually and often, especially before long missions, and keep your console's system software up to date. If crashes keep happening, report them to Rockstar Support with your console and what you were doing.",
+      "We're tracking it on our status page and will update this the moment Rockstar responds.",
+    ],
+    faq: [
+      { q: "Why does GTA 6 keep crashing?", a: "Rockstar hasn't said. Make sure the game and console are fully updated, and report repeat crashes to Rockstar Support." },
+      { q: "Can you recover a lost GTA 6 save?", a: "There's no official way yet. Saving manually often limits how much you can lose." },
+    ],
+  },
   // ---------------- Easter eggs ----------------
   "bigfoot-in-the-grassrivers": {
     question: "Is there Bigfoot in GTA 6?",

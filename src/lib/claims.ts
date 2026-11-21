@@ -115,12 +115,12 @@ export const CLAIMS: Claim[] = [
     category: "Release",
     verdict: "BUSTED",
     verdictText:
-      "There is no PC version on November 19. Rockstar hasn't announced one or given it a date, and past GTAs reached PC months to years later.",
+      "GTA 6 launched only on PS5 and Xbox Series X|S. Industry reports point to a PC release in early 2027, but Rockstar hasn't announced one.",
     sources: [
       { label: "IBTimes: Release date, price and platforms", url: "https://www.ibtimes.co.uk/gta-6-release-date-price-storage-console-launch-1831921" },
       { label: "TweakTown: PC news will come from Rockstar, says Take-Two", url: "https://www.tweaktown.com/news/114580/grand-theft-auto-6-pc-and-physical-disc-news-will-come-from-rockstar-confirms-take-two/index.html" },
     ],
-    updated: D,
+    updated: P,
     trending: true,
   },
   {
@@ -884,6 +884,53 @@ export const CLAIMS: Claim[] = [
     updated: P,
   },
 
+  {
+    slug: "gta-6-has-first-person-mode",
+    claim: "GTA 6 has a first-person mode.",
+    short: "GTA 6 has a first-person mode",
+    category: "Gameplay",
+    verdict: "BUSTED",
+    verdictText:
+      "There's no first-person mode, unlike GTA 5's re-release. Players found a glitch that fakes one, but Rockstar says the game was built around third-person animation.",
+    sources: [
+      { label: "Dexerto: Glitch lets players access first-person mode", url: "https://www.dexerto.com/gta/gta-6-glitch-lets-players-access-first-person-mode-3430025/" },
+      { label: "FandomWire: The first-person glitch", url: "https://fandomwire.com/gta-6-first-person-glitch-fixes-rockstar-mistake/" },
+    ],
+    updated: P,
+    trending: true,
+  },
+  {
+    slug: "big-patch-november-25",
+    claim: "Rockstar promised a big GTA 6 patch on November 25.",
+    short: "A big patch is coming November 25",
+    category: "Release",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "The date comes from a viral post, not from Rockstar, and the post carries a community note saying so. Rockstar hasn't announced any patch or published notes for the updates so far.",
+    howToTest: "Watch the status page and Rockstar Newswire around November 25.",
+    sources: [
+      { label: "Happy Gamer: Day 3 live updates", url: "https://happygamer.com/gta-6-day-3-live-updates-177471/" },
+      { label: "Rockstar Newswire: Grand Theft Auto VI now available", url: "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available" },
+    ],
+    updated: P,
+    trending: true,
+  },
+  {
+    slug: "crashes-wipe-saves",
+    claim: "GTA 6 crashes are wiping players' saves.",
+    short: "GTA 6 crashes are wiping saves",
+    category: "Release",
+    verdict: "UNVERIFIED",
+    verdictText:
+      "Some PS5 and Xbox players say crashes cost them hours of progress. Rockstar hasn't confirmed a save-wipe bug or how widespread it is, and there's no fix yet.",
+    howToTest: "Track Rockstar Support and patch notes; we update the status page as soon as there's a fix.",
+    sources: [
+      { label: "Happy Gamer: Day 3 live updates", url: "https://happygamer.com/gta-6-day-3-live-updates-177471/" },
+      { label: "Futurism: Bizarre bugs in GTA VI", url: "https://futurism.com/future-society/gta-6-bugs" },
+    ],
+    updated: P,
+    trending: true,
+  },
 ];
 
 export function claimBySlug(slug: string): Claim | undefined {
