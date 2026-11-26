@@ -501,13 +501,13 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
   "climb-mount-kalaga": {
     question: "Can you climb Mount Kalaga in GTA 6?",
     body: [
-      "Mount Kalaga National Park is one of Leonida's named regions, but nothing official shows its summit or a route to the top.",
-      "Fans have linked its scenery to the southern Appalachians, but that's a fan theory. Florida itself has no mountains.",
-      "Climbing Mount Chiliad in GTA 5 was a rite of passage, so we expect players to race to the top of Kalaga on day one.",
+      "Yes. You can reach the summit of Mount Kalaga, in the national park region in Leonida's north. From the cliff edge at the top, the Mount Kalaga Base Jump launches you off the mountain with a parachute.",
+      "Don't confuse it with the Kalaga Outcrop jump near the watchtower, which is a separate stunt lower down. Guides note that beating the summit jump's target time is a stunt goal, not a trigger for anything hidden.",
+      "Unlike Mount Chiliad in GTA 5, no summit mystery has been found yet. Fans looking for one will keep searching.",
     ],
     faq: [
-      { q: "What is Mount Kalaga based on?", a: "Fans think the southern Appalachians. Rockstar hasn't said." },
-      { q: "Is there a mountain in GTA 6?", a: "Yes, Mount Kalaga, inside a national park region." },
+      { q: "Is there a secret at the top of Mount Kalaga?", a: "None has been confirmed. The summit has a BASE jump." },
+      { q: "Where is Mount Kalaga in GTA 6?", a: "In Mount Kalaga National Park, in the north of Leonida." },
     ],
   },
   "rockstar-released-the-full-map": {
@@ -554,7 +554,7 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
     body: [
       "Yes, two of them. Version 1.002 rolled out the week before launch, about 1.07 GB on PS5 and about 2.18 GB on Xbox Series X|S, and version 1.002.001 followed on November 16.",
       "Rockstar hasn't published patch notes for either, so what they change is unknown. Patches this close to launch usually fix bugs found after the game went gold. PS5 players also needed a PlayStation system update to play.",
-      "Updates download automatically if your console is set to. We track every update, its size and any notes on our GTA 6 status page.",
+      "The first post-launch update, 1.002.002, followed on November 23 with real patch notes, fixing crashes and broken autosaves. We track every update, its size and any notes on our GTA 6 status page.",
     ],
     faq: [
       { q: "How big is the GTA 6 day one patch?", a: "Update 1.002 is about 1.07 GB on PS5 and about 2.18 GB on Xbox." },
@@ -701,28 +701,76 @@ export const CLAIM_CONTENT: Record<string, ClaimContent> = {
   "big-patch-november-25": {
     question: "When is the next GTA 6 patch?",
     body: [
-      "Rockstar hasn't announced one. A viral post claims Rockstar promised a big update on November 25, but no Rockstar statement backs it up, and the post now carries a community note saying so.",
-      "So far GTA 6 has had two updates, 1.002 and 1.002.001, both before launch and both without patch notes. With players reporting crashes and bugs, a fix-focused update is likely soon, but the date is unknown.",
-      "We list every update, its size and any notes on our status page the moment it lands.",
+      "The viral November 25 date was wrong. Rockstar released GTA 6's first post-launch update, 1.002.002, on November 23, about 603 MB on PS5 and 1.6 GB on Xbox Series X|S. The post claiming a November 25 patch never had a Rockstar statement behind it.",
+      "Unlike the two pre-launch updates, 1.002.002 came with patch notes. It fixes several crashes, broken autosaves, stuck weather, story phone calls that never arrived, a wanted level you couldn't escape, the gym deadlift bar, and partners refusing to hand over bags at fences.",
+      "Rockstar hasn't announced a date for the next update. We log each one, with its size and notes, on our status page as soon as it rolls out.",
     ],
     faq: [
-      { q: "Is there a GTA 6 patch today?", a: "Check our status page. We log every update as it rolls out." },
-      { q: "Where does Rockstar post GTA 6 patch notes?", a: "On Rockstar Support and Newswire, though none have been published for the updates so far." },
+      { q: "What does GTA 6 update 1.002.002 fix?", a: "Crashes, autosaves, stuck weather, missing story calls, an inescapable wanted level, the gym deadlift bar and fence bag hand-offs." },
+      { q: "How big is the GTA 6 1.002.002 update?", a: "About 603 MB on PS5 and 1.6 GB on Xbox Series X|S." },
     ],
   },
   "crashes-wipe-saves": {
     question: "Is GTA 6 deleting saves?",
     body: [
-      "Some players say so. On launch weekend, PS5 and Xbox players reported crashes that cost them hours of progress. Rockstar hasn't confirmed a save-wipe bug, said how many players are affected, or released a fix.",
-      "Until there's a patch, save manually and often, especially before long missions, and keep your console's system software up to date. If crashes keep happening, report them to Rockstar Support with your console and what you were doing.",
-      "We're tracking it on our status page and will update this the moment Rockstar responds.",
+      "It was, in effect. A launch bug stopped autosaves from working properly for some players, so when the game crashed, they lost everything since their last manual save, sometimes hours.",
+      "Rockstar's November 23 update, 1.002.002, fixed the autosave bug along with several crash causes. Rockstar hasn't explained what caused the problem or offered a way to recover progress lost before the fix.",
+      "Make sure your game is updated. Saving manually before long missions is still a good habit.",
     ],
     faq: [
-      { q: "Why does GTA 6 keep crashing?", a: "Rockstar hasn't said. Make sure the game and console are fully updated, and report repeat crashes to Rockstar Support." },
-      { q: "Can you recover a lost GTA 6 save?", a: "There's no official way yet. Saving manually often limits how much you can lose." },
+      { q: "Is the GTA 6 autosave bug fixed?", a: "Yes, in update 1.002.002, released November 23." },
+      { q: "Can you recover lost GTA 6 progress?", a: "There's no official way. Progress lost before the fix is gone." },
     ],
   },
   // ---------------- Easter eggs ----------------
+  "secret-vice-city-portal": {
+    question: "Is there a secret Vice City portal in GTA 6?",
+    body: [
+      "Yes. A YouTuber solved one of GTA 6's most elaborate secrets: a riddle built on a classic Vice City chime and old cheat-code knowledge. It took three days of following electricity lines across Leonida to find a series of substations.",
+      "The lettering on the substations reportedly spells out \"Life is Passing Me By,\" a cheat code from the original game. Finish the trail and a portal opens into a stylized, PS2-era Vice City, where you're handed Tommy Vercetti's shirt and his motorbike.",
+      "Rockstar hasn't commented, as usual with its secrets. VGC and Pure Xbox both covered the discovery, and it's widely considered the best Easter egg found so far.",
+    ],
+    faq: [
+      { q: "How do you find the Vice City portal in GTA 6?", a: "Follow the in-game electricity lines to a series of substations. Guides are still mapping the exact route." },
+      { q: "Is Tommy Vercetti in GTA 6?", a: "Not as a character. The portal Easter egg gives you his shirt and motorbike." },
+    ],
+  },
+  "literal-easter-egg-radio-tower": {
+    question: "Is there a real Easter egg in GTA 6?",
+    body: [
+      "Yes, an actual egg. Climb the radio tower in South Vice-Dale County, a climb of several minutes, and at the very top there's a nest full of eggs.",
+      "Pick one up and throw it from the tower, and the game plays a secret cutscene. The discovery was shared on X and spread quickly, both for the pun and for how much effort Rockstar put into a joke most players would never see.",
+      "It's one of dozens of secrets players found in the first week, alongside Bigfoot, a dog riding a jet ski and a portal to the original Vice City.",
+    ],
+    faq: [
+      { q: "Where is the radio tower Easter egg in GTA 6?", a: "On the radio tower in South Vice-Dale County. The nest is at the very top." },
+      { q: "What happens when you throw the egg?", a: "A secret cutscene plays. We won't spoil it here." },
+    ],
+  },
+  "arthur-morgan-hat": {
+    question: "Where is Arthur Morgan's hat in GTA 6?",
+    body: [
+      "At a yard sale in southern Port Gellhorn. It's listed as a \"Genuine Cowboy Hat\" for $35. The item description never mentions Arthur, but the shape, the color and the knot all match the hat worn by Red Dead Redemption 2's hero.",
+      "Guides disagree slightly on timing. Most say it appears during Chapter 2, while you're playing as Lucia. If it isn't there, keep going with the story and check back.",
+      "Rockstar hasn't confirmed it's a deliberate nod, but it's about as clear a Red Dead reference as you'll find in GTA 6.",
+    ],
+    faq: [
+      { q: "How much is Arthur Morgan's hat in GTA 6?", a: "$35, sold as a \"Genuine Cowboy Hat.\"" },
+      { q: "Are there other Red Dead references in GTA 6?", a: "Players keep finding small nods. This hat is the clearest so far." },
+    ],
+  },
+  "secret-vault-radio-station": {
+    question: "How do you unlock The Vault radio station in GTA 6?",
+    body: [
+      "Go to The Vault nightclub in Vice City and find the red poster with a gas mask on it. Open the WAiNK app on your phone and scan the poster. From then on, The Vault radio station is available in every vehicle.",
+      "The station plays the electronic and rave music that's heard inside the club. The game doesn't tell you whether you've already scanned the poster, so if the station isn't showing up, go back and scan it again.",
+      "Guides list the club as downtown Vice City, near the NINE1NINE building.",
+    ],
+    faq: [
+      { q: "How many radio stations does GTA 6 have?", a: "More than 20, plus The Vault once you unlock it." },
+      { q: "What is the WAiNK app in GTA 6?", a: "An in-game phone app used to scan posters and other items around Leonida." },
+    ],
+  },
   "bigfoot-in-the-grassrivers": {
     question: "Is there Bigfoot in GTA 6?",
     body: [

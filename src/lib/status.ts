@@ -13,10 +13,10 @@ export const STATUS: {
   updated: string;
 } = {
   level: "ISSUES",
-  headline: "Some players report crashes that lost progress. No fix from Rockstar yet.",
+  headline: "Update 1.002.002 fixed crashes and broken autosaves. A few issues remain.",
   detail:
-    "There's no online mode, so there are no GTA 6 servers to go down. On day three, some PS5 and Xbox players report crashes that cost them hours of progress; Rockstar hasn't confirmed it or released a fix. Boxed copies with bad codes and weak Xbox Series S performance are still open, and the November 18 PSN outage is fixed.",
-  updated: "2026-11-21T18:00:00-05:00",
+    "Rockstar's first post-launch update, released November 23, fixed several crashes, the autosave bug behind lost progress, stuck weather and missing story calls. Still open: boxed copies with bad codes, the disappearing stash bag, and weak performance on Xbox Series S.",
+  updated: "2026-11-26T12:00:00-05:00",
 };
 
 export const STATUS_LABEL: Record<StatusLevel, string> = {
@@ -39,6 +39,7 @@ export const TIMELINE: { date: string; dateLabel?: string; label: string; detail
   { date: "2026-11-18", label: "Reviews went live, PSN sign-in outage", detail: "More than 150 reviews and a 99 on Metacritic. PSN sign-ins failed for some hours; Sony fixed it the same day without giving a cause.", done: true },
   { date: "2026-11-19", label: "Launch", detail: "Unlocked at midnight local time on PS5 and Xbox Series X|S. PS5 players needed a new system update first.", done: true },
   { date: "2026-11-20", label: "Day-one sales announced", detail: "Take-Two: $3.79 billion in day-one retail sales and 32.5 million copies sold before launch.", done: true },
+  { date: "2026-11-23", label: "Update 1.002.002", detail: "First post-launch update, with patch notes: crash, autosave, weather and story fixes.", done: true },
   { date: "2027-01-01", dateLabel: "2027 (reported)", label: "GTA 6 Online", detail: "No date from Rockstar. Reports point to sometime in 2027.", done: false },
 ];
 
@@ -52,6 +53,30 @@ export type Patch = {
 };
 
 export const PATCHES: Patch[] = [
+  {
+    version: "1.002.002",
+    date: "2026-11-23",
+    sizes: [
+      { platform: "PS5", size: "about 603 MB" },
+      { platform: "Xbox Series X|S", size: "about 1.6 GB" },
+    ],
+    summary: "First update after launch, and the first with patch notes. Rolled out in phases over the day.",
+    notes: [
+      "Fixed several crashes. Rockstar didn't say what caused them.",
+      "Fixed autosaves not working, which made crashes cost hours of progress.",
+      "Fixed weather getting stuck.",
+      "Fixed story phone calls that never arrived and blocked progress.",
+      "Fixed a wanted level that couldn't be escaped.",
+      "Fixed the gym deadlift bar.",
+      "Fixed partners refusing to hand over bags at fences.",
+      "Progress lost before the fix can't be recovered.",
+    ],
+    sources: [
+      { label: "Push Square", url: "https://www.pushsquare.com/guides/gta-6-patch-notes" },
+      { label: "Game Rant", url: "https://gamerant.com/new-gta-6-update-patch-notes-november-23-2026/" },
+      { label: "Android Headlines", url: "https://www.androidheadlines.com/2026/11/gta-6-update-brings-in-fixes-for-autosave-crashing-and-more.html" },
+    ],
+  },
   {
     version: "1.002.001",
     date: "2026-11-16",
@@ -100,26 +125,26 @@ export const ISSUES: Issue[] = [
     id: "crash-lost-progress",
     title: "Crashes that lose hours of progress",
     platforms: "PS5, Xbox",
-    state: "INVESTIGATING",
+    state: "FIXED",
     detail:
-      "Some players report the game crashing and losing hours of progress. As of Saturday, Rockstar hasn't confirmed a save-wipe bug or released a fix. A viral post promising a big patch on November 25 isn't backed by any Rockstar statement.",
-    fix: "Save manually and often, especially before long missions, and keep the console updated. If a crash keeps repeating, report it to Rockstar Support.",
+      "A launch bug broke autosaves, so crashes could wipe hours of progress. Update 1.002.002 on November 23 fixed the autosave bug and several crash causes. Progress lost before the fix can't be recovered.",
+    fix: "Install update 1.002.002. If crashes continue after updating, report them to Rockstar Support.",
     sources: [
       { label: "Happy Gamer: Day 3 live updates", url: "https://happygamer.com/gta-6-day-3-live-updates-177471/" },
-      { label: "Futurism: Bizarre bugs in GTA VI", url: "https://futurism.com/future-society/gta-6-bugs" },
+      { label: "Android Headlines: Update fixes autosave and crashing", url: "https://www.androidheadlines.com/2026/11/gta-6-update-brings-in-fixes-for-autosave-crashing-and-more.html" },
     ],
-    updated: "2026-11-21",
+    updated: "2026-11-26",
   },
   {
     id: "stash-bag",
     title: "Stash bag disappears after getting in a car or a cutscene",
     platforms: "PS5, Xbox",
     state: "NOT_FIXED",
-    detail: "Players report their stash bag vanishing after entering a vehicle or sitting through a cutscene. No official patch yet.",
+    detail: "Players report their stash bag vanishing after entering a vehicle or sitting through a cutscene. Update 1.002.002 fixed a separate bug with partners handing over bags at fences, but not this one.",
     sources: [
       { label: "GTA6BUGS", url: "https://gta6bugs.com/bugs/gta-6-stash-bag-vanished-car-or-cutscene" },
     ],
-    updated: "2026-11-21",
+    updated: "2026-11-26",
   },
   {
     id: "box-codes",

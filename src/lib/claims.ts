@@ -53,6 +53,7 @@ const D = "2026-11-12";
 const N = "2026-11-13";
 const L = "2026-11-15";
 const P = "2026-11-21";
+const Q = "2026-11-26";
 
 export const CLAIMS: Claim[] = [
   // ---------- Release ----------
@@ -415,13 +416,13 @@ export const CLAIMS: Claim[] = [
     claim: "You can climb all the way to the top of Mount Kalaga.",
     short: "You can climb to the top of Mount Kalaga",
     category: "World",
-    verdict: "UNVERIFIED",
-    verdictText: "Mount Kalaga is one of Leonida's named regions. Nothing official shows its summit or a way up.",
-    howToTest: "Hike or drive to the highest point and post a screenshot.",
+    verdict: "CONFIRMED",
+    verdictText: "You can reach the summit. There's even a BASE jump launching off the cliff edge at the top, the Mount Kalaga Base Jump. No hidden secret up there has been confirmed.",
     sources: [
-      { label: "GTA Intel: Real Florida inspirations", url: "https://gtaintel.com/news/gta-6-real-florida-inspirations" },
+      { label: "games.gg: How to reach the Mount Kalaga summit", url: "https://games.gg/grand-theft-auto-vi/guides/mount-kalaga-mystery-how-to-reach-summit-grand-theft-auto-6/" },
+      { label: "Beebom: Mount Kalaga National Park guide", url: "https://beebom.com/gta-6-mount-kalaga-national-park-guide/" },
     ],
-    updated: D,
+    updated: Q,
   },
 
   // ---------- Easter eggs ----------
@@ -783,12 +784,12 @@ export const CLAIMS: Claim[] = [
     short: "GTA 6 already has a pre-launch patch",
     category: "Release",
     verdict: "CONFIRMED",
-    verdictText: "Two updates landed before launch: 1.002 on November 13 and 1.002.001 on November 16. Rockstar hasn't published patch notes for either.",
+    verdictText: "Two updates landed before launch, 1.002 and 1.002.001, without notes. The first post-launch update, 1.002.002 on November 23, came with notes fixing crashes and autosaves.",
     sources: [
       { label: "dlcompare: Two silent updates and a PSN outage", url: "https://www.dlcompare.com/gaming-news/gta-6-day-one-patch-two-silent-updates-and-a-psn-outage" },
       { label: "Vice: GTA 6 day one patch is already rolling out", url: "https://www.vice.com/en/article/gta-6-day-one-patch-ps5-version-1002/" },
     ],
-    updated: P,
+    updated: Q,
   },
   {
     slug: "gta-6-downgraded-on-xbox",
@@ -904,32 +905,85 @@ export const CLAIMS: Claim[] = [
     claim: "Rockstar promised a big GTA 6 patch on November 25.",
     short: "A big patch is coming November 25",
     category: "Release",
-    verdict: "UNVERIFIED",
-    verdictText:
-      "The date comes from a viral post, not from Rockstar, and the post carries a community note saying so. Rockstar hasn't announced any patch or published notes for the updates so far.",
-    howToTest: "Watch the status page and Rockstar Newswire around November 25.",
+    verdict: "BUSTED",
+    verdictText: "The date was wrong. Rockstar released its first post-launch update, 1.002.002, on November 23, two days earlier, fixing crashes, autosaves and more.",
     sources: [
-      { label: "Happy Gamer: Day 3 live updates", url: "https://happygamer.com/gta-6-day-3-live-updates-177471/" },
-      { label: "Rockstar Newswire: Grand Theft Auto VI now available", url: "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available" },
+      { label: "Push Square: GTA 6 patch notes", url: "https://www.pushsquare.com/guides/gta-6-patch-notes" },
+      { label: "Game Rant: New GTA 6 update patch notes for November 23", url: "https://gamerant.com/new-gta-6-update-patch-notes-november-23-2026/" },
     ],
-    updated: P,
-    trending: true,
+    updated: Q,
   },
   {
     slug: "crashes-wipe-saves",
     claim: "GTA 6 crashes are wiping players' saves.",
     short: "GTA 6 crashes are wiping saves",
     category: "Release",
-    verdict: "UNVERIFIED",
-    verdictText:
-      "Some PS5 and Xbox players say crashes cost them hours of progress. Rockstar hasn't confirmed a save-wipe bug or how widespread it is, and there's no fix yet.",
-    howToTest: "Track Rockstar Support and patch notes; we update the status page as soon as there's a fix.",
+    verdict: "CONFIRMED",
+    verdictText: "Partly. A launch bug broke autosaves, so crashes could cost hours of progress. Update 1.002.002 on November 23 fixed autosaves and several crashes. Lost progress can't be recovered.",
     sources: [
-      { label: "Happy Gamer: Day 3 live updates", url: "https://happygamer.com/gta-6-day-3-live-updates-177471/" },
-      { label: "Futurism: Bizarre bugs in GTA VI", url: "https://futurism.com/future-society/gta-6-bugs" },
+      { label: "Android Headlines: Update fixes autosave and crashing", url: "https://www.androidheadlines.com/2026/11/gta-6-update-brings-in-fixes-for-autosave-crashing-and-more.html" },
+      { label: "Push Square: GTA 6 patch notes", url: "https://www.pushsquare.com/guides/gta-6-patch-notes" },
     ],
-    updated: P,
+    updated: Q,
     trending: true,
+  },
+  {
+    slug: "secret-vice-city-portal",
+    claim: "GTA 6 hides a portal back to the original Vice City.",
+    short: "There's a secret portal to old Vice City",
+    category: "Easter eggs",
+    verdict: "CONFIRMED",
+    verdictText:
+      "A player solved a multi-day riddle that ends in a portal to a PS2-style Vice City, where you get Tommy Vercetti's shirt and motorbike. It's the most elaborate secret found so far.",
+    sources: [
+      { label: "VGC: One of GTA 6's most elaborate Easter eggs has been solved", url: "https://www.videogameschronicle.com/news/one-of-gta-6s-most-elaborate-easter-eggs-has-been-solved/" },
+      { label: "Pure Xbox: GTA 6's most spectacular Easter egg so far", url: "https://www.purexbox.com/news/2026/11/gta-6s-most-spectacular-easter-egg-so-far-has-just-been-discovered" },
+    ],
+    updated: Q,
+    trending: true,
+  },
+  {
+    slug: "literal-easter-egg-radio-tower",
+    claim: "GTA 6 has a literal Easter egg on top of a radio tower.",
+    short: "There's a literal Easter egg on a tower",
+    category: "Easter eggs",
+    verdict: "CONFIRMED",
+    verdictText:
+      "Climb the radio tower in South Vice-Dale County and you'll find a nest of real eggs. Throwing one from the top triggers a secret cutscene.",
+    sources: [
+      { label: "IBTimes: GTA 6 Easter egg is literally an egg", url: "https://www.ibtimes.co.uk/gta-6-player-discovers-literal-easter-egg-leonida-1833342" },
+      { label: "GamingBible: GTA 6 Easter eggs you might have missed", url: "https://www.gamingbible.com/news/gta-6-easter-eggs-778903-20261120" },
+    ],
+    updated: Q,
+    trending: true,
+  },
+  {
+    slug: "arthur-morgan-hat",
+    claim: "You can buy Arthur Morgan's hat in GTA 6.",
+    short: "You can buy Arthur Morgan's hat",
+    category: "Easter eggs",
+    verdict: "CONFIRMED",
+    verdictText:
+      "A yard sale in southern Port Gellhorn sells a $35 'Genuine Cowboy Hat' that matches the Red Dead Redemption 2 hero's, right down to the knot. Guides say it shows up in Chapter 2.",
+    sources: [
+      { label: "Gfinity: How to find Arthur Morgan's hat", url: "https://www.gfinityesports.com/article/gta-6-how-to-find-arthur-morgans-hat-red-dead-redemption-2-easter-egg" },
+      { label: "GamingBible: GTA 6 Easter eggs you might have missed", url: "https://www.gamingbible.com/news/gta-6-easter-eggs-778903-20261120" },
+    ],
+    updated: Q,
+  },
+  {
+    slug: "secret-vault-radio-station",
+    claim: "GTA 6 has a secret radio station you have to unlock.",
+    short: "There's a secret radio station to unlock",
+    category: "Easter eggs",
+    verdict: "CONFIRMED",
+    verdictText:
+      "Scan the gas-mask poster inside The Vault nightclub in Vice City with the WAiNK phone app, and The Vault radio station unlocks in every vehicle.",
+    sources: [
+      { label: "Destructoid: How to unlock The Vault radio station", url: "https://www.destructoid.com/how-to-unlock-the-secret-vault-radio-station-in-gta-6/" },
+      { label: "Rankedboost: GTA 6 radio stations", url: "https://rankedboost.com/gta/radio-stations/" },
+    ],
+    updated: Q,
   },
 ];
 
